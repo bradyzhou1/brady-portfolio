@@ -9,13 +9,17 @@ export default function Navbar() {
         </Link>
 
         <nav className="navLinks" aria-label="Main navigation">
-          <Link href="/">Home</Link>
-          <Link href="/research">Research</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/music">Music</Link>
-          <Link href="/leadership">Leadership</Link>
-          <Link href="/about">About</Link>
+          <a href="/#about">About</a>
+          <a href="/#research">Research</a>
+          <a href="/#mychild360">MyChild360</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#music">Music</a>
+          <a href="/#leadership">Leadership</a>
         </nav>
+
+        <a className="connectNavButton" href="/#contact">
+          Connect
+        </a>
       </div>
     </header>
   );

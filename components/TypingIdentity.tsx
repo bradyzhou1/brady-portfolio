@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const identities = [
-  "a Student Researcher",
-  "a Developer",
-  "a Musician",
-  "Brady Zhou, who devotes himself in using technology to solve real world problems."
+  "Student Researcher",
+  "Developer",
+  "Musician",
+  "Caring brother to an austic sibling"
 ];
 
 export default function TypingIdentity() {
@@ -53,7 +53,7 @@ export default function TypingIdentity() {
 
   return (
     <p className="typingIdentity" aria-label="Student researcher, developer, and musician">
-      <span className="typingPrefix">I am </span>
+      {/* <span className="typingPrefix">I am </span> */}
       <span className="typingText">{displayedText}</span>
       <span className="typingCursor" aria-hidden="true">
         |

@@ -16,10 +16,6 @@ export default function Navbar() {
           <a href="/#music">Music</a>
           <a href="/#leadership">Leadership</a>
         </nav>
-
-        <a className="connectNavButton" href="/#contact">
-          Connect
-        </a>
       </div>
     </header>
   );

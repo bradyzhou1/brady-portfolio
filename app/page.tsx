@@ -42,49 +42,34 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="heroSection">
-        <div className="heroBackgroundText" aria-hidden="true">
-          BUILD
-        </div>
+        <div className="heroGlow heroGlowOne" aria-hidden="true" />
+        <div className="heroGlow heroGlowTwo" aria-hidden="true" />
 
-        <div className="heroContent">
+        <div className="heroCenter">
           <TypingIdentity />
 
-          <h1>
-            Using computer science to understand human differences and build
-            tools for families.
-          </h1>
+          <h1 className="heroName">Brady Zhou</h1>
 
-          <p className="heroIntroduction">
-            I am Brady Zhou, a high school student exploring the intersection
-            of computer science, machine learning, neuroscience, and
-            human-centered technology.
+          <p className="heroSlogan">
+            Building technology to understand people, support families, and solve
+            meaningful problems.
           </p>
 
-          <div className="heroButtons">
-            <a href="#research" className="primaryButton">
-              Explore My Work
-            </a>
-
-            <Link href="/about" className="secondaryButton">
-              About Me
-            </Link>
-          </div>
-
-          <div className="socialLinks">
-            <a
-              href="https://github.com/bradyzhou1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-
+          <div className="heroProfileLinks">
             <a
               href="/documents/brady-zhou-resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
               Résumé
+            </a>
+
+            <a
+              href="https://github.com/bradyzhou1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
             </a>
 
             <a
@@ -97,70 +82,86 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="heroPortrait">
-          <div className="profilePhotoWrapper">
-            <Image
-              src="/images/Brady-2025-AllState.jpg"
-              alt="Brady Zhou"
-              fill
-              priority
-              sizes="(max-width: 950px) 430px, 30vw"
-              className="profilePhoto"
-            />
-          </div>
-        </div>
-
-        <a href="#about" className="scrollPrompt">
-          Scroll to explore
-          <span>↓</span>
-        </a>
+        {/* <a href="#about" className="scrollPrompt">
+          <span>Scroll</span>
+          <span aria-hidden="true">↓</span>
+        </a> */}
       </section>
 
       {/* ABOUT */}
       <section id="about" className="contentSection aboutSection">
-        <div className="sectionLabel">
-          <span>01</span>
-          <p>About</p>
+        <div className="aboutVisuals">
+          <div className="aboutPhoto aboutPhotoPrimary">
+            <Image
+              src="/images/scientific-discussion.jpg"
+              alt="Portrait of Brady Zhou"
+              fill
+              sizes="(max-width: 900px) 90vw, 36vw"
+              className="aboutImage"
+            />
+          </div>
+
+          <div className="aboutPhoto aboutPhotoSecondary">
+            <Image
+              src="/images/Brady-2025-AllState.jpg"
+              alt="Brady with his younger brother Mason"
+              fill
+              sizes="(max-width: 900px) 70vw, 25vw"
+              className="aboutImage"
+            />
+          </div>
         </div>
 
-        <div className="aboutLayout">
+        <div className="aboutContent">
+          <p className="eyebrow">About Me</p>
+
           <h2>
-            I build at the intersection of technology, curiosity, and human
-            experience.
+            I began building because some questions felt too personal to leave
+            unanswered.
           </h2>
 
-          <div className="aboutText">
+          <div className="aboutStory">
             <p>
-              My interest in computer science began with a simple question:
-              how can technology help us better understand people and solve
-              problems that matter in everyday life?
+              I am a student researcher, developer, and violinist interested in how
+              computer science can help us better understand people and respond to
+              real needs.
             </p>
 
             <p>
-              That question has led me from studying autism-related patterns in
-              brain connectivity to developing MyChild360, a platform designed
-              to help families organize and understand complex educational,
-              medical, and developmental information.
+              Much of that interest grew from my relationship with my beloved younger brother,
+              Mason, who is autistic. In my sophomore year, Mason went through a huge regression,
+              despite the MRI result came back normal. That experience led me to study autism-related patterns in functional
+              brain connectivity. I developed a machine learning research pipeline,
+              examined the effects of validation choices and research-site
+              differences, and eventually presented the work as a Regeneron ISEF
+              finalist.              
+            </p>
+              
+            <p>
+              Watching my family navigate therapies,
+              medical information, school records, and periods of uncertainty, I
+              became more aware of how fragmented both knowledge and support can be. It 
+              inspired MyChild360, a platform designed to help families bring
+              together educational, medical, therapy, and daily-life information into
+              a more connected picture.
             </p>
 
             <p>
-              Outside of technology, I am a violinist, student leader, and
-              active member of my school community.
+              Outside of technology, violin has taught me patience, discipline, and
+              how to listen closely to others. Whether I am working on research,
+              software, engineering, or music, I am drawn to the same process:
+              observe carefully, ask better questions, and build with purpose.
             </p>
-
-            <Link href="/about" className="textLink">
-              Read more about me →
-            </Link>
           </div>
         </div>
       </section>
 
       {/* RESEARCH */}
       <section id="research" className="contentSection researchSection">
-        <div className="sectionLabel">
+        {/* <div className="sectionLabel">
           <span>02</span>
           <p>Featured Research</p>
-        </div>
+        </div> */}
 
         <div className="sectionHeading">
           <p className="eyebrow">Regeneron ISEF Finalist</p>
@@ -213,10 +214,10 @@ export default function Home() {
 
       {/* MYCHILD360 */}
       <section id="mychild360" className="contentSection productSection">
-        <div className="sectionLabel">
+        {/* <div className="sectionLabel">
           <span>03</span>
           <p>Building for Families</p>
-        </div>
+        </div> */}
 
         <div className="productLayout">
           <div className="productVisual">
@@ -269,10 +270,10 @@ export default function Home() {
 
       {/* PROJECTS */}
       <section id="projects" className="contentSection projectsSection">
-        <div className="sectionLabel">
+        {/* <div className="sectionLabel">
           <span>04</span>
           <p>Selected Projects</p>
-        </div>
+        </div> */}
 
         <div className="sectionHeading">
           <p className="eyebrow">Projects</p>
@@ -309,10 +310,10 @@ export default function Home() {
 
       {/* MUSIC */}
       <section id="music" className="contentSection musicSection">
-        <div className="sectionLabel">
+        {/* <div className="sectionLabel">
           <span>05</span>
           <p>Music</p>
-        </div>
+        </div> */}
 
         <div className="splitSection">
           <div>
@@ -337,10 +338,10 @@ export default function Home() {
 
       {/* LEADERSHIP */}
       <section id="leadership" className="contentSection leadershipSection">
-        <div className="sectionLabel">
+        {/* <div className="sectionLabel">
           <span>06</span>
           <p>Leadership and Impact</p>
-        </div>
+        </div> */}
 
         <div className="sectionHeading">
           <p className="eyebrow">School and Community</p>

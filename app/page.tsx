@@ -93,7 +93,7 @@ export default function Home() {
         <div className="aboutVisuals">
           <div className="aboutPhoto aboutPhotoPrimary">
             <Image
-              src="/images/scientific-discussion.jpg"
+              src="/images/dis.jpg"
               alt="Portrait of Brady Zhou"
               fill
               sizes="(max-width: 900px) 90vw, 36vw"

@@ -295,6 +295,21 @@ export default function ResearchPage() {
                 </p>
               </div>
             </article>
+
+            <article>
+              <span>04</span>
+              <div>
+                <h3>Biologically meaningful network patterns</h3>
+                <p>
+                  The most informative and reproducible connections were centered on
+                  interactions between limbic, attention, control, sensory-motor, and
+                  default-mode networks. These patterns are consistent with commonly
+                  reported autism-related differences in emotion regulation, sensory
+                  processing, and attentional shifting.
+                </p>
+              </div>
+            </article>
+
           </div>
 
           <div className="researchResultsVisuals">

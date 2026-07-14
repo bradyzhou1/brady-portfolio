@@ -167,7 +167,7 @@ export default function Home() {
         </div> */}
 
         <div className="sectionHeading">
-          <p className="eyebrow">Regeneron ISEF Finalist</p>
+          <p className="eyebrow">Regeneron ISEF Finalist · GSEF Grand Award · Best in Category</p>
           <h2>Studying autism through functional brain connectivity</h2>
         </div>
 
@@ -180,14 +180,16 @@ export default function Home() {
             </p>
 
             <p>
-              Beyond model performance, the project focused on a deeper
-              challenge: understanding how research-site differences,
-              validation choices, and high-dimensional data can affect
-              scientific conclusions.
+              The project examined both model generalization and biological meaning:
+              site effects were strong, while the most stable predictive patterns involved
+              limbic, attention-control, and sensory-motor networks associated with
+              commonly reported autism-related differences.
             </p>
 
+
+
             <Link href="/research" className="primaryButton">
-              Explore the Research
+              Explore the Full Project
             </Link>
           </div>
 
@@ -208,8 +210,8 @@ export default function Home() {
             </article>
 
             <article>
-              <strong>ISEF</strong>
-              <span>Finalist</span>
+              <strong>0.738</strong>
+              <span>LOSO ROC-AUC</span>
             </article>
           </div>
         </div>

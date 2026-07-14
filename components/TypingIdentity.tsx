@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 
 const identities = [
-  "Student Researcher",
+  "Researcher",
   "Developer",
   "Musician",
+  "Student Leader",
   "Caring brother to an austic sibling"
 ];
 

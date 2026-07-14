@@ -10,9 +10,9 @@ export default function Navbar() {
 
         <nav className="navLinks" aria-label="Main navigation">
           <a href="/#about">About</a>
-          <a href="/#research">Research</a>
+          <a href="/#research">ISEF Research</a>
           <a href="/#mychild360">MyChild360</a>
-          <a href="/#projects">Projects</a>
+          <a href="/#projects">Other Projects</a>
           <a href="/#music">Music</a>
           <a href="/#leadership">Leadership</a>
         </nav>

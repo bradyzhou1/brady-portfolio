@@ -51,8 +51,7 @@ export default function Home() {
           <h1 className="heroName">Brady Zhou</h1>
 
           <p className="heroSlogan">
-            Building technology to understand people, support families, and solve
-            meaningful problems.
+            Turning personal questions into research, technology, and tools that help others.
           </p>
 
           <div className="heroProfileLinks">
@@ -122,35 +121,39 @@ export default function Home() {
 
           <div className="aboutStory">
             <p>
-              I am a student researcher, developer, and violinist interested in how
-              computer science can help us better understand people and respond to
-              real needs.
+              I am a student researcher, developer, violinist, and student leader interested 
+              in how computer science can help us better understand people and respond to real needs.
             </p>
 
             <p>
-              Much of that interest grew from my relationship with my beloved younger brother,
-              Mason, who is autistic. In my sophomore year, Mason went through a huge regression,
-              despite the MRI result came back normal. That experience led me to study autism-related patterns in functional
-              brain connectivity. I developed a machine learning research pipeline,
-              examined the effects of validation choices and research-site
-              differences, and eventually presented the work as a Regeneron ISEF
-              finalist.              
+              Much of that interest grew from my relationship with my younger brother, Mason, 
+              who is autistic. During my sophomore year, he experienced a profound regression. 
+              Although his clinical MRI showed no structural abnormality, I was left wondering 
+              what changes in the brain might not be visible through conventional imaging. 
+              That question led me to study autism-related patterns in functional brain connectivity 
+              using resting-state fMRI. I developed a machine-learning research pipeline, investigated 
+              how validation methods and research-site differences could influence results, 
+              and ultimately presented the project as a Regeneron ISEF finalist.             
             </p>
               
             <p>
-              Watching my family navigate therapies,
-              medical information, school records, and periods of uncertainty, I
-              became more aware of how fragmented both knowledge and support can be. It 
-              inspired MyChild360, a platform designed to help families bring
-              together educational, medical, therapy, and daily-life information into
-              a more connected picture.
+              At the same time, I watched my family navigate therapy notes, medical records, 
+              school documents, medications, and long periods of uncertainty. I began to see 
+              how fragmented information can make an already difficult process even harder. 
+              That experience inspired MyChild360, an AI-powered platform that uses large 
+              language models, retrieval-augmented generation, and vector search to help families 
+              organize and understand educational, medical, therapeutic, and daily-life information 
+              in one connected system.
             </p>
 
             <p>
-              Outside of technology, violin has taught me patience, discipline, and
-              how to listen closely to others. Whether I am working on research,
-              software, engineering, or music, I am drawn to the same process:
-              observe carefully, ask better questions, and build with purpose.
+              Outside of technology, violin has taught me patience, discipline, and how to listen 
+              closely to others. Leadership roles in my school, student organizations, and community 
+              initiatives have taught me how to communicate, take responsibility, 
+              and help a group move toward a shared goal. Whether I am conducting research, 
+              building software, solving an engineering problem, rehearsing with an orchestra, 
+              or leading a team, I am drawn to the same process: observe carefully, ask better 
+              questions, collaborate thoughtfully, and build with purpose.
             </p>
           </div>
         </div>

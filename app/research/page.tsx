@@ -121,6 +121,7 @@ export default function ResearchPage() {
             rather than concentrated in one “autism region.”
           </p>
         </div>
+
       </section>
 
       {/* WHY */}

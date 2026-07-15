@@ -4,36 +4,20 @@ import Image from "next/image";
 
 const featuredProjects = [
   {
-    title: "MyChild360",
-    category: "Family Technology",
-    description:
-      "A family-centered platform that combines intelligent document search, dashboards, and long-term tracking to help parents understand and manage complex information about their child.",
-    href: "/projects/mychild360",
-    number: "01",
-  },
-  {
-    title: "Autism Connectivity Research",
-    category: "Machine Learning Research",
-    description:
-      "A research pipeline using functional brain connectivity and machine learning to study autism-related patterns while examining validation, site effects, and model limitations.",
-    href: "/research",
-    number: "02",
-  },
-  {
-    title: "Moon Rover Engineering",
-    category: "Aerospace Engineering",
-    description:
-      "A collaborative engineering project involving rover design, programming, testing, and iterative problem-solving for a simulated lunar environment.",
-    href: "/projects/moon-rover",
-    number: "03",
-  },
-  {
     title: "Portfolio Website",
     category: "Web Development",
     description:
       "A personal portfolio designed and built with Next.js and TypeScript to communicate research, technical work, leadership, and creative interests.",
-    href: "/projects/portfolio-website",
-    number: "04",
+    href: "/projects",
+    number: "01",
+  },
+  {
+    title: "Moon Rover Engineering",
+    category: "Internship at Georgia Tech",
+    description:
+      "A collaborative engineering project involving programming, rover design, testing, and iterative problem-solving for a simulated lunar environment.",
+    href: "/projects",
+    number: "02",
   },
 ];
 
@@ -140,7 +124,7 @@ export default function Home() {
               At the same time, I watched my family navigate therapy notes, medical records, 
               school documents, medications, and long periods of uncertainty. I began to see 
               how fragmented information can make an already difficult process even harder. 
-              That experience inspired MyChild360, an AI-powered platform that uses large 
+              That experience inspired ParentLensAI, an AI-powered platform that uses large 
               language models, retrieval-augmented generation, and vector search to help families 
               organize and understand educational, medical, therapeutic, and daily-life information 
               in one connected system.
@@ -217,8 +201,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MYCHILD360 */}
-      <section id="mychild360" className="contentSection productSection">
+      {/* ParentLensAI */}
+      <section id="parentlensai" className="contentSection productSection">
         {/* <div className="sectionLabel">
           <span>03</span>
           <p>Building for Families</p>
@@ -234,7 +218,7 @@ export default function Home() {
               </div>
 
               <div className="mockupContent">
-                <p>MyChild360</p>
+                <p>ParentLensAI</p>
                 <h3>A clearer view of a child’s journey</h3>
 
                 <div className="mockupCards">
@@ -248,14 +232,14 @@ export default function Home() {
           </div>
 
           <div className="productDescription">
-            <p className="eyebrow">MyChild360</p>
+            <p className="eyebrow">ParentLensAI</p>
 
             <h2>Turning scattered information into a connected picture</h2>
 
             <p>
               Families often manage information across IEPs, therapy notes,
               medical records, medications, school performance, sleep, and
-              daily observations. MyChild360 is designed to bring those pieces
+              daily observations. ParentLensAI is designed to bring those pieces
               together.
             </p>
 
@@ -266,7 +250,7 @@ export default function Home() {
               <li>Medication, health, school, and sleep tracking</li>
             </ul>
 
-            <Link href="/projects/mychild360" className="textLink">
+            <Link href="/parentlensai" className="textLink">
               View the full project →
             </Link>
           </div>
@@ -281,8 +265,8 @@ export default function Home() {
         </div> */}
 
         <div className="sectionHeading">
-          <p className="eyebrow">Projects</p>
-          <h2>Research, software, and engineering</h2>
+          <p className="eyebrow">Other Projects</p>
+          <h2>Software beyond my featured work</h2>
         </div>
 
         <div className="projectList">
@@ -308,17 +292,13 @@ export default function Home() {
 
         <div className="sectionAction">
           <Link href="/projects" className="secondaryButton">
-            View All Projects
+            View Full Project Collection
           </Link>
         </div>
       </section>
 
       {/* MUSIC */}
       <section id="music" className="contentSection musicSection">
-        {/* <div className="sectionLabel">
-          <span>05</span>
-          <p>Music</p>
-        </div> */}
 
         <div className="splitSection">
           <div>
@@ -334,9 +314,6 @@ export default function Home() {
               preparation contributes to a larger ensemble.
             </p>
 
-            <Link href="/music" className="textLink">
-              Explore my music journey →
-            </Link>
           </div>
         </div>
       </section>
@@ -382,11 +359,6 @@ export default function Home() {
           </article>
         </div>
 
-        <div className="sectionAction">
-          <Link href="/leadership" className="secondaryButton">
-            Explore Leadership
-          </Link>
-        </div>
       </section>
 
       {/* CONTACT */}

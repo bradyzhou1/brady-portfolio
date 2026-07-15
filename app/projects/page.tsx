@@ -57,7 +57,7 @@ const projects: Project[] = [
     title: "ParentLensAI",
     description:
       "A family-centered platform designed to organize and connect educational, medical, therapy, and daily-life information. ParentLensAI combines large language models, retrieval-augmented generation, vector search, document management, and dashboards to help families understand a child’s journey more clearly.",
-    image: "/images/projects/parentlensai.jpg",
+    image: "/images/projects/parentlensai.png",
     imageAlt: "ParentLensAI application dashboard and document interface",
     technologies: [
       "LLM",

@@ -201,7 +201,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ParentLensAI */}
       {/* PARENTLENSAI */}
       <section id="parentlensai" className="contentSection productSection">
         <div className="productLayout">
@@ -210,8 +209,8 @@ export default function Home() {
               <Image
                 src="/images/parentlensai/logo.png"
                 alt="ParentLensAI logo"
-                width={282}
-                height={72}
+                width={784}
+                height={200}
                 className="productLogo"
               />
             </div>

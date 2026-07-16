@@ -260,8 +260,8 @@ export default function Home() {
               <li>Local data storage with optional local AI models</li>
             </ul>
 
-            <Link href="/parentlensai" className="textLink">
-              Explore the Full Project →
+            <Link href="/parentlensai" className="parentLensHomeButton">
+              Explore the Full Project
             </Link>
           </div>
         </div>

@@ -202,60 +202,72 @@ export default function Home() {
       </section>
 
       {/* ParentLensAI */}
+      {/* PARENTLENSAI */}
       <section id="parentlensai" className="contentSection productSection">
-        {/* <div className="sectionLabel">
-          <span>03</span>
-          <p>Building for Families</p>
-        </div> */}
-
         <div className="productLayout">
           <div className="productVisual">
-            <div className="browserMockup">
-              <div className="browserBar">
-                <span />
-                <span />
-                <span />
-              </div>
-
-              <div className="mockupContent">
-                <p>ParentLensAI</p>
-                <h3>A clearer view of a child’s journey</h3>
-
-                <div className="mockupCards">
-                  <div>Documents</div>
-                  <div>Health</div>
-                  <div>Education</div>
-                  <div>Progress</div>
-                </div>
-              </div>
+            <div className="productBrand">
+              <Image
+                src="/images/parentlensai/logo.png"
+                alt="ParentLensAI logo"
+                width={282}
+                height={72}
+                className="productLogo"
+              />
             </div>
+
+            <div className="productScreenshotFrame">
+              <Image
+                src="/images/parentlensai/parentlensai-dashboard.png"
+                alt="ParentLensAI dashboard showing records, tasks, notes, and trends"
+                fill
+                sizes="(max-width: 950px) 92vw, 52vw"
+                className="productScreenshot"
+              />
+            </div>
+
+            <p className="productCaption">
+              A connected workspace for records, questions, daily observations, and
+              long-term progress.
+            </p>
           </div>
 
           <div className="productDescription">
             <p className="eyebrow">ParentLensAI</p>
 
-            <h2>Turning scattered information into a connected picture</h2>
+            <h2>
+              Turning fragmented family information into a connected picture
+            </h2>
 
             <p>
-              Families often manage information across IEPs, therapy notes,
-              medical records, medications, school performance, sleep, and
-              daily observations. ParentLensAI is designed to bring those pieces
-              together.
+              Families of children with complex needs often manage years of IEPs,
+              evaluations, medical records, therapy notes, medications, school
+              information, appointments, and daily observations across separate
+              systems.
+            </p>
+
+            <p>
+              ParentLensAI brings those pieces together in one local-first platform.
+              It combines intelligent document search, retrieval-augmented
+              generation, structured tracking, dashboards, tasks, and notes to help
+              parents understand information in context rather than one document at
+              a time.
             </p>
 
             <ul className="featureList">
-              <li>Document management and intelligent search</li>
-              <li>RAG and vector-database retrieval</li>
-              <li>Dashboards and progress visualization</li>
-              <li>Medication, health, school, and sleep tracking</li>
+              <li>Document upload, indexing, summaries, and semantic search</li>
+              <li>RAG-based questions grounded in family records</li>
+              <li>Medication, academic, and progress trend visualization</li>
+              <li>Local data storage with optional local AI models</li>
             </ul>
 
             <Link href="/parentlensai" className="textLink">
-              View the full project →
+              Explore the Full Project →
             </Link>
           </div>
         </div>
       </section>
+
 
       {/* PROJECTS */}
       <section id="projects" className="contentSection projectsSection">

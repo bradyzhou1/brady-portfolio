@@ -143,6 +143,137 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ACADEMIC & TECHNICAL SNAPSHOT */}
+      <section
+        id="academic-technical"
+        className="contentSection snapshotSection"
+      >
+        <div className="snapshotHeader">
+          <p className="eyebrow">Academic & Technical Snapshot</p>
+
+          <h2>
+            Preparation across academics, computing, research, and engineering
+          </h2>
+
+          <p>
+            A concise view of my academic foundation, technical experience, and
+            continuing growth as a student researcher and developer.
+          </p>
+        </div>
+
+        <div className="snapshotGrid">
+          {/* GPA */}
+          <article className="snapshotCard snapshotMetricCard">
+            <p className="snapshotCardLabel">Academic Record</p>
+
+            <strong>4.69</strong>
+
+            <h3>Weighted GPA</h3>
+
+            <p>
+              4.0 unweighted
+              <br />
+              As of the end of 11th grade
+            </p>
+          </article>
+
+          {/* SAT */}
+          <article className="snapshotCard snapshotMetricCard">
+            <p className="snapshotCardLabel">Standardized Testing</p>
+
+            <strong>1540</strong>
+
+            <h3>SAT · First Sitting</h3>
+
+            <p>
+              790 Math
+              <br />
+              750 Reading & Writing
+            </p>
+          </article>
+
+          {/* SENIOR COURSEWORK */}
+          <article className="snapshotCard">
+            <p className="snapshotCardLabel">Academic Rigor</p>
+
+            <h3>Senior Coursework</h3>
+
+            <ul className="snapshotList">
+              <li>AP Cybersecurity</li>
+              <li>Georgia Tech Multivariable Calculus</li>
+              <li>Georgia Tech Linear Algebra</li>
+              <li>AP Research</li>
+              <li>AP Biology</li>
+              <li>AP English Lit</li>
+              <li>AP World History</li>
+              <li>Chamber Orchestra</li>
+            </ul>
+          </article>
+
+          {/* COMPUTER SCIENCE SKILLS */}
+          <article className="snapshotCard snapshotWideCard">
+            <p className="snapshotCardLabel">Technical Foundation</p>
+
+            <h3>Computer Science Skills</h3>
+
+            <div className="skillGroups">
+              <div>
+                <h4>Programming</h4>
+                <p>Python · TypeScript · Java · SQL</p>
+              </div>
+
+              <div>
+                <h4>Machine Learning</h4>
+                <p>
+                  scikit-learn · XGBoost · PyTorch · Graph Neural Networks
+                </p>
+              </div>
+
+              <div>
+                <h4>AI & Data Systems</h4>
+                <p>
+                  RAG · Vector Databases · Local LLMs · Data Visualization
+                </p>
+              </div>
+
+              <div>
+                <h4>Development</h4>
+                <p>Next.js · React · Streamlit · Git · GitHub</p>
+              </div>
+            </div>
+          </article>
+
+          {/* ACADEMIC RECOGNITION */}
+          <article className="snapshotCard">
+            <p className="snapshotCardLabel">Selected Recognition</p>
+
+            <h3>Academic Honors</h3>
+
+            <ul className="snapshotList">
+              <li>Georgia Certificate of Merit</li>
+              <li>Outstanding Achievement - STEM Academy</li>
+              <li>Outstanding Achievement - English Department</li>
+              <li>AP Scholar with Distinction</li>
+            </ul>
+          </article>
+
+          {/* TECHNICAL EXPERIENCES */}
+          <article className="snapshotCard">
+            <p className="snapshotCardLabel">Beyond the Classroom</p>
+
+            <h3>Technical Experiences</h3>
+
+            <ul className="snapshotList">
+              <li>Georgia Tech STEP - Aerospace Engineering</li>
+              <li>Seth Bonder Computational & Data Science Camp</li>
+              <li>Independent AI/ML Research</li>
+              <li>ParentLensAI Development & Beta Testing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+
       {/* RESEARCH */}
       <section id="research" className="contentSection researchSection">
         {/* <div className="sectionLabel">
@@ -259,6 +390,12 @@ export default function Home() {
               <li>Medication, academic, and progress trend visualization</li>
               <li>Local data storage with optional local AI models</li>
             </ul>
+
+            <p className="parentLensBetaNote">
+              ParentLensAI is currently in beta testing with parents of children with
+              special needs, gathering feedback on usability, usefulness, and
+              privacy-conscious design.
+            </p>
 
             <Link href="/parentlensai" className="parentLensHomeButton">
               Explore the Full Project

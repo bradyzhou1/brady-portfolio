@@ -243,6 +243,106 @@ export default function ProjectsPage() {
         ))}
       </section>
 
+      {/* ADDITIONAL RESEARCH & PROBLEM SOLVING */}
+      <section className="additionalProjectsSection">
+        <div className="additionalProjectsHeader">
+          <p className="projectsPageEyebrow">
+            Additional Research & Problem Solving
+          </p>
+
+          <h2>
+            Team-based work across environmental research, applied mathematics, and
+            scientific communication
+          </h2>
+
+          <p>
+            These experiences expanded how I approach open-ended problems, collaborate
+            under constraints, and communicate technical ideas beyond an individual
+            project.
+          </p>
+        </div>
+
+        <div className="additionalProjectsGrid">
+          {/* MICROPLASTICS PROJECT */}
+          <article className="additionalProjectCard">
+            <div className="additionalProjectTop">
+              <span className="additionalProjectNumber">05</span>
+
+              <p className="additionalProjectCategory">
+                Environmental Research · Community Science
+              </p>
+            </div>
+
+            <h3>Microplastics Mapping in the Chattahoochee River</h3>
+
+            <p className="additionalProjectRole">Research Team Member</p>
+
+            <p className="additionalProjectDescription">
+              Contributed to a community-engaged research project investigating
+              microplastic pollution in the Chattahoochee River. The project connected
+              environmental research with local public awareness and community impact.
+            </p>
+
+            <p className="additionalProjectContext">
+              Supported by the Atlanta Mayor’s Office Youth Climate Action Fund and
+              Bloomberg Philanthropies. The research team presented the project and
+              poster at Atlanta City Hall.
+            </p>
+
+            <a
+              href="https://sites.google.com/view/microplastics-ycaf2025/home"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="additionalProjectLink"
+            >
+              Explore the Project
+            </a>
+
+            <div className="additionalProjectTags">
+              <span>Environmental Research</span>
+              <span>Community Science</span>
+              <span>Team Collaboration</span>
+              <span>Scientific Communication</span>
+            </div>
+          </article>
+
+          {/* M3 CHALLENGE */}
+          <article className="additionalProjectCard">
+            <div className="additionalProjectTop">
+              <span className="additionalProjectNumber">06</span>
+
+              <p className="additionalProjectCategory">
+                Applied Mathematics · Data Science
+              </p>
+            </div>
+
+            <h3>MathWorks Math Modeling Challenge</h3>
+
+            <p className="additionalProjectRole">Modeling Team Member</p>
+
+            <p className="additionalProjectDescription">
+              Collaborated with a five-student team under a continuous 14-hour time
+              constraint to address an open-ended real-world problem using applied
+              mathematics, data analysis, and computational modeling.
+            </p>
+
+            <p className="additionalProjectContext">
+              The team developed and communicated its solution through a 35-page
+              research-style paper, balancing model development, interpretation,
+              technical writing, and teamwork within a single-day deadline.
+            </p>
+
+            <div className="additionalProjectTags">
+              <span>Mathematical Modeling</span>
+              <span>Data Science</span>
+              <span>Technical Writing</span>
+              <span>Time-Constrained Teamwork</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
       {/* CLOSING */}
       <section className="projectsClosing">
         <p className="projectsPageEyebrow">Still Building</p>

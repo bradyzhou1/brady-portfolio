@@ -427,145 +427,107 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* LEADERSHIP */}
       <section
         id="leadership"
         className="contentSection leadershipSection"
       >
-        <div className="leadershipLayout">
-          <div className="leadershipRoles">
-            <p className="eyebrow">Leadership and Service</p>
+        <div className="leadershipHeader">
+          <p className="eyebrow">Leadership & Service</p>
 
-            <h2>
-              Leadership built through responsibility, access, and follow-through
-            </h2>
+          <h2>
+            Creating opportunities for others to participate, contribute, and serve
+          </h2>
 
-            <div className="leadershipRoleList">
-              <article>
-                <span>01</span>
-                <div>
-                  <h3>Class of 2027 Student Representative</h3>
-                  <p className="leadershipOrganization">
-                    Walton STEM Academy · Advanced Math and Science Pathway
-                  </p>
-                  <p>
-                    A four-year appointed role supporting academy initiatives,
-                    student events, partnerships, and communication.
-                  </p>
-                </div>
-              </article>
+          <p>
+            My leadership experiences have centered on expanding access, building
+            lasting partnerships, and helping student-led ideas become reliable
+            community programs.
+          </p>
+        </div>
 
-              <article>
-                <span>02</span>
-                <div>
-                  <h3>Co-President</h3>
-                  <p className="leadershipOrganization">First Step Team</p>
-                  <p>
-                    Previously President-elect and VP of Outreach for a student-run
-                    nonprofit with more than 200 members serving Metro Atlanta.
-                  </p>
-                </div>
-              </article>
+        <div className="leadershipExperienceList">
+          <article className="leadershipFeaturedRole">
+            <span>01</span>
 
-              <article>
-                <span>03</span>
-                <div>
-                  <h3>Treasurer</h3>
-                  <p className="leadershipOrganization">
-                    Walton Student Government Association
-                  </p>
-                  <p>
-                    Managed budgets, tracked expenditures, prepared reports, and
-                    supported fundraising and major school events.
-                  </p>
-                </div>
-              </article>
+            <div>
+              <p className="leadershipOrganization">First Step Team</p>
+              <h3>Co-President</h3>
 
-              <article>
-                <span>04</span>
-                <div>
-                  <h3>Student Representative</h3>
-                  <p className="leadershipOrganization">
-                    Expect Respect Anti-Bullying Advisory Council
-                  </p>
-                  <p>
-                    Contributed a student perspective to district-wide efforts
-                    focused on creating safer and more respectful school communities.
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <span>05</span>
-                <div>
-                  <h3>Founding Member and Treasurer</h3>
-                  <p className="leadershipOrganization">
-                    Mockingbird Melody Georgia Chapter
-                  </p>
-                  <p>
-                    Recruited student musicians, coordinated performances, and helped
-                    expand access to live music for senior communities.
-                  </p>
-                </div>
-              </article>
+              <p>
+                Previously President-elect and VP of Outreach for a student-run
+                nonprofit with more than 200 members. I initiated a long-term
+                partnership with the Chattahoochee Nature Center, expanded local food
+                bank partnerships, and helped organize environmental restoration,
+                food distribution, fundraising, and community-service events.
+              </p>
             </div>
-          </div>
+          </article>
 
-          <div className="leadershipReflection">
-            <p className="eyebrow">What leadership taught me</p>
+          <article>
+            <span>02</span>
 
-            <h2>
-              Leadership begins by noticing what prevents others from participating.
-            </h2>
+            <div>
+              <p className="leadershipOrganization">
+                Walton STEM Academy · Advanced Math and Science Pathway
+              </p>
+              <h3>Class of 2027 Student Representative</h3>
 
-            <p>
-              My most meaningful leadership experiences have started with a practical
-              question: what is keeping people from becoming involved, and what can I
-              do to remove that barrier?
-            </p>
-
-            <p>
-              At First Step, I saw that many students wanted to serve but lacked
-              accessible and consistent opportunities. I helped establish a
-              long-term partnership with the Chattahoochee Nature Center, expanded
-              food-bank partnerships closer to members’ communities, and supported
-              projects involving habitat restoration, river cleanups, food
-              distribution, fundraising, and community events.
-            </p>
-
-            <p>
-              These experiences taught me that leadership is less about directing
-              people than creating the conditions in which they can contribute.
-              That requires listening, communicating clearly, following through on
-              small details, and accepting responsibility when a plan does not work
-              as expected.
-            </p>
-
-            <p>
-              Community service has also changed how I think about impact. A project
-              does not need to be large to matter. Organizing one accessible service
-              opportunity, helping one student find a role, or bringing music to one
-              group of seniors can create a meaningful connection.
-            </p>
-
-            <div className="leadershipImpact">
-              <article>
-                <strong>200+</strong>
-                <span>First Step members</span>
-              </article>
-
-              <article>
-                <strong>100+</strong>
-                <span>Service hours annually</span>
-              </article>
-
-              <article>
-                <strong>4 years</strong>
-                <span>STEM Academy representation</span>
-              </article>
+              <p>
+                A four-year role supporting academy initiatives, student events,
+                partnerships, and communication between students and program
+                leadership.
+              </p>
             </div>
-          </div>
+          </article>
+
+          <article>
+            <span>03</span>
+
+            <div>
+              <p className="leadershipOrganization">
+                Mockingbird Melody Georgia Chapter
+              </p>
+              <h3>Founding Member & Treasurer</h3>
+
+              <p>
+                Recruited student musicians, helped coordinate performances, and
+                expanded access to live music for senior communities.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>04</span>
+
+            <div>
+              <p className="leadershipOrganization">
+                Walton Student Government Association
+              </p>
+              <h3>Treasurer</h3>
+
+              <p>
+                Managed budgets, tracked expenditures, prepared reports, and
+                supported fundraising and major school events.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>05</span>
+
+            <div>
+              <p className="leadershipOrganization">
+                Expect Respect Anti-Bullying Advisory Council
+              </p>
+              <h3>Student Representative</h3>
+
+              <p>
+                Contributed a student perspective to district-wide efforts focused on
+                safer and more respectful school communities.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 

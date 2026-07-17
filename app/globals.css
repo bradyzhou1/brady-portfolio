@@ -2798,9 +2798,9 @@ p {
 
 .musicStory h2 {
   margin: 0 0 30px;
-  font-size: clamp(2rem, 3.4vw, 3.45rem);
-  line-height: 1.08;
-  letter-spacing: -0.05em;
+  font-size: clamp(1.6rem, 2.5vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
 }
 
 .musicStory > p:not(.eyebrow) {
@@ -2892,148 +2892,136 @@ p {
   }
 }
 
-
 /* =========================================================
    LEADERSHIP SECTION
    ========================================================= */
 
-.leadershipLayout {
+.leadershipHeader {
+  max-width: 820px;
+  margin-bottom: 58px;
+}
+
+.leadershipHeader h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.leadershipHeader > p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.leadershipExperienceList {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 90px;
-  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-.leadershipRoles h2,
-.leadershipReflection h2 {
-  margin: 0 0 35px;
-  font-size: clamp(2rem, 3.4vw, 3.45rem);
-  line-height: 1.08;
-  letter-spacing: -0.05em;
-}
-
-.leadershipRoleList {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.leadershipRoleList article {
-  padding: 25px 0;
+.leadershipExperienceList article {
+  min-height: 260px;
+  padding: 28px;
   display: grid;
-  grid-template-columns: 45px 1fr;
-  gap: 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
 }
 
-.leadershipRoleList article > span {
+.leadershipExperienceList article:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.085);
+}
+
+.leadershipExperienceList article > span {
   color: var(--accent-secondary);
   font-family: monospace;
   font-size: 0.8rem;
 }
 
-.leadershipRoleList h3 {
-  margin: 0;
+.leadershipExperienceList h3 {
+  margin: 5px 0 13px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
 }
 
 .leadershipOrganization {
-  margin: 5px 0 10px;
+  margin: 0;
   color: var(--accent-secondary) !important;
-  font-size: 0.84rem;
-  font-weight: 700;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.leadershipRoleList article div > p:last-child {
+.leadershipExperienceList article div > p:last-child {
   margin: 0;
-  color: rgba(255, 255, 255, 0.64);
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 1rem;
   line-height: 1.7;
 }
 
-.leadershipReflection {
-  padding: 38px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.055);
+.leadershipFeaturedRole {
+  grid-column: 1 / -1;
+  min-height: 235px !important;
 }
 
-.leadershipReflection > p:not(.eyebrow) {
-  margin: 0 0 20px;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 1.02rem;
-  line-height: 1.8;
+.leadershipFeaturedRole div {
+  max-width: 920px;
 }
 
-.leadershipImpact {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.leadershipImpact article {
-  min-height: 125px;
-  padding: 22px 14px 0;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.leadershipImpact article:first-child {
-  padding-left: 0;
-}
-
-.leadershipImpact article:last-child {
-  border-right: 0;
-}
-
-.leadershipImpact strong {
-  color: white;
-  font-size: 1.65rem;
-  line-height: 1;
-}
-
-.leadershipImpact span {
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 0.78rem;
-  line-height: 1.45;
-}
-
-/* Responsive */
-
-@media (max-width: 950px) {
-  .musicLayout,
-  .leadershipLayout {
+@media (max-width: 850px) {
+  .leadershipExperienceList {
     grid-template-columns: 1fr;
   }
 
-  .musicStory {
-    position: static;
+  .leadershipFeaturedRole {
+    grid-column: auto;
   }
 }
 
 @media (max-width: 650px) {
-  .musicLayout,
-  .leadershipLayout {
-    gap: 55px;
+  .leadershipHeader {
+    margin-bottom: 42px;
   }
 
-  .leadershipReflection {
-    padding: 26px 22px;
-  }
-
-  .leadershipImpact {
-    grid-template-columns: 1fr;
-  }
-
-  .leadershipImpact article {
+  .leadershipExperienceList article {
     min-height: auto;
-    padding: 20px 0;
-    border-right: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 24px 20px;
   }
+}
 
-  .leadershipImpact article:last-child {
-    border-bottom: 0;
-  }
+/* =========================================================
+   HOMEPAGE TYPOGRAPHY CONSISTENCY
+   ========================================================= */
+
+.aboutContent h2,
+.sectionHeading h2,
+.productDescription h2,
+.musicStory h2,
+.leadershipRoles h2,
+.leadershipReflection h2,
+.contactSection h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.aboutStory p,
+.researchDescription p,
+.productDescription > p,
+.musicStory > p:not(.eyebrow),
+.leadershipReflection > p:not(.eyebrow),
+.leadershipRoleList article div > p:last-child {
+  font-size: 1.05rem;
+  line-height: 1.8;
 }

@@ -87,7 +87,7 @@ export default function Home() {
           <div className="aboutPhoto aboutPhotoSecondary">
             <Image
               src="/images/Brady-2025-AllState.jpg"
-              alt="Brady with his younger brother Mason"
+              alt="All-State 2025"
               fill
               sizes="(max-width: 900px) 70vw, 25vw"
               className="aboutImage"
@@ -310,66 +310,263 @@ export default function Home() {
 
       {/* MUSIC */}
       <section id="music" className="contentSection musicSection">
+        <div className="musicLayout">
+          {/* LEFT SIDE: STORY */}
+          <div className="musicStory">
+            <p className="eyebrow">Music</p>
 
-        <div className="splitSection">
-          <div>
-            <p className="eyebrow">Violin</p>
-            <h2>Discipline, listening, and shared expression</h2>
-          </div>
+            <h2>
+              Learning to listen, contribute, and create something larger than myself
+            </h2>
 
-          <div>
             <p>
-              Music has been one of the longest commitments in my life. Through
-              All-State Orchestra and my role as Principal Second Violin in my
-              school chamber orchestra, I have learned how individual
-              preparation contributes to a larger ensemble.
+              Violin has been one of the longest commitments in my life. Over nine
+              years of lessons, daily practice, rehearsals, auditions, and
+              performances have taught me that progress rarely arrives all at once.
+              It is built through patience, attention to detail, and the willingness
+              to return to a difficult passage until it begins to speak.
             </p>
 
+            <p>
+              Ensemble playing has taught me to listen beyond my own part. Whether
+              serving as Principal Second Violin in Walton Chamber Orchestra,
+              performing in Georgia All-State Orchestra, or participating in chamber
+              and early-music programs, I have learned that musicianship is not only
+              about being heard. It is about understanding how one contribution fits
+              into a shared interpretation.
+            </p>
+
+            <p>
+              Music has also given me space to explore beyond performance. I have
+              composed for string quartet, studied the viola da gamba, and learned
+              from musicians outside my regular school environment. Each experience
+              has encouraged me to approach music with greater curiosity and
+              flexibility.
+            </p>
+
+            <p>
+              Most importantly, music has become a way for me to serve. I have
+              performed for residents of senior communities, supported holiday
+              fundraising recitals, and played for children with special needs,
+              including children like my younger brother Mason. These experiences
+              have shown me that music can offer comfort and connection even when
+              words are limited.
+            </p>
+          </div>
+
+          {/* RIGHT SIDE: VIDEO + SELECTED ACTIVITIES */}
+          <div className="musicRightColumn">
+            <div className="musicMedia">
+              <div className="musicVideoFrame">
+                <iframe
+                  src="https://www.youtube.com/embed/F3n6xjZCq8Q"
+                  title="Brady Zhou violin performance"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+
+              <p className="musicVideoCaption">
+                2025 violin solo
+              </p>
+            </div>
+
+            <div className="musicActivities">
+              <article>
+                <span>01</span>
+
+                <div>
+                  <h3>Georgia All-State & Chamber Orchestra</h3>
+                  <p>
+                    Selected for Georgia GMEA All-State Orchestra across middle and
+                    high school and served as Principal Second Violin in Walton High
+                    School Chamber Orchestra.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>02</span>
+
+                <div>
+                  <h3>Youth Orchestra Recognition</h3>
+                  <p>
+                    Accepted to Emory Youth Symphony Orchestra and Georgia Youth
+                    Symphony Orchestra.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>03</span>
+
+                <div>
+                  <h3>Composition & Early Music</h3>
+                  <p>
+                    Two-time East Cobb Council finalist in National PTA Reflections
+                    for original string-quartet compositions, with additional
+                    experience in chamber music and viola da gamba.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>04</span>
+
+                <div>
+                  <h3>Community Performance</h3>
+                  <p>
+                    Founding member, treasurer, and volunteer violinist with
+                    Mockingbird Melody, performing for senior communities, special
+                    needs children, and community service events.
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
+
       {/* LEADERSHIP */}
-      <section id="leadership" className="contentSection leadershipSection">
-        {/* <div className="sectionLabel">
-          <span>06</span>
-          <p>Leadership and Impact</p>
-        </div> */}
+      <section
+        id="leadership"
+        className="contentSection leadershipSection"
+      >
+        <div className="leadershipLayout">
+          <div className="leadershipRoles">
+            <p className="eyebrow">Leadership and Service</p>
 
-        <div className="sectionHeading">
-          <p className="eyebrow">School and Community</p>
-          <h2>Leading through responsibility and long-term commitment</h2>
+            <h2>
+              Leadership built through responsibility, access, and follow-through
+            </h2>
+
+            <div className="leadershipRoleList">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Class of 2027 Student Representative</h3>
+                  <p className="leadershipOrganization">
+                    Walton STEM Academy · Advanced Math and Science Pathway
+                  </p>
+                  <p>
+                    A four-year appointed role supporting academy initiatives,
+                    student events, partnerships, and communication.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Co-President</h3>
+                  <p className="leadershipOrganization">First Step Team</p>
+                  <p>
+                    Previously President-elect and VP of Outreach for a student-run
+                    nonprofit with more than 200 members serving Metro Atlanta.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Treasurer</h3>
+                  <p className="leadershipOrganization">
+                    Walton Student Government Association
+                  </p>
+                  <p>
+                    Managed budgets, tracked expenditures, prepared reports, and
+                    supported fundraising and major school events.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Student Representative</h3>
+                  <p className="leadershipOrganization">
+                    Expect Respect Anti-Bullying Advisory Council
+                  </p>
+                  <p>
+                    Contributed a student perspective to district-wide efforts
+                    focused on creating safer and more respectful school communities.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <span>05</span>
+                <div>
+                  <h3>Founding Member and Treasurer</h3>
+                  <p className="leadershipOrganization">
+                    Mockingbird Melody Georgia Chapter
+                  </p>
+                  <p>
+                    Recruited student musicians, coordinated performances, and helped
+                    expand access to live music for senior communities.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div className="leadershipReflection">
+            <p className="eyebrow">What leadership taught me</p>
+
+            <h2>
+              Leadership begins by noticing what prevents others from participating.
+            </h2>
+
+            <p>
+              My most meaningful leadership experiences have started with a practical
+              question: what is keeping people from becoming involved, and what can I
+              do to remove that barrier?
+            </p>
+
+            <p>
+              At First Step, I saw that many students wanted to serve but lacked
+              accessible and consistent opportunities. I helped establish a
+              long-term partnership with the Chattahoochee Nature Center, expanded
+              food-bank partnerships closer to members’ communities, and supported
+              projects involving habitat restoration, river cleanups, food
+              distribution, fundraising, and community events.
+            </p>
+
+            <p>
+              These experiences taught me that leadership is less about directing
+              people than creating the conditions in which they can contribute.
+              That requires listening, communicating clearly, following through on
+              small details, and accepting responsibility when a plan does not work
+              as expected.
+            </p>
+
+            <p>
+              Community service has also changed how I think about impact. A project
+              does not need to be large to matter. Organizing one accessible service
+              opportunity, helping one student find a role, or bringing music to one
+              group of seniors can create a meaningful connection.
+            </p>
+
+            <div className="leadershipImpact">
+              <article>
+                <strong>200+</strong>
+                <span>First Step members</span>
+              </article>
+
+              <article>
+                <strong>100+</strong>
+                <span>Service hours annually</span>
+              </article>
+
+              <article>
+                <strong>4 years</strong>
+                <span>STEM Academy representation</span>
+              </article>
+            </div>
+          </div>
         </div>
-
-        <div className="leadershipGrid">
-          <article>
-            <span>01</span>
-            <h3>STEM Leadership</h3>
-            <p>
-              Four-year appointed representative for the AMS pathway in Walton
-              High School’s STEM Academy.
-            </p>
-          </article>
-
-          <article>
-            <span>02</span>
-            <h3>Student Government</h3>
-            <p>
-              Contributing to student initiatives, communication, and school
-              community engagement.
-            </p>
-          </article>
-
-          <article>
-            <span>03</span>
-            <h3>FirstStep</h3>
-            <p>
-              Supporting organizational programs, major website updates, and
-              community-focused initiatives.
-            </p>
-          </article>
-        </div>
-
       </section>
 
       {/* CONTACT */}

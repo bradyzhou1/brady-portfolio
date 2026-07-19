@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
 
 // const awards = [
 //   {
@@ -71,19 +73,22 @@ const awardGroups = [
 
 const findings = [
   {
-    value: "0.738",
+    value: 0.738,
+    decimals: 3,
     label: "LOSO ROC-AUC",
   },
   {
-    value: "0.675",
+    value: 0.675,
+    decimals: 3,
     label: "Aggregated accuracy",
   },
   {
-    value: "p ≤ 0.001",
+    textValue: "p ≤ 0.001",
     label: "Permutation significance",
   },
   {
-    value: "24",
+    value: 24,
+    decimals: 0,
     label: "Unseen-site tests",
   },
 ];
@@ -156,124 +161,146 @@ export default function ResearchPage() {
 
       {/* WHY */}
       <section className="researchLightSection">
-        <div className="researchTwoColumn">
-          <div>
-            <p className="researchSectionLabel">Why I did this</p>
+        <Reveal delay={0.1}>
+          <div className="researchTwoColumn">
+            <div>
+              <p className="researchSectionLabel">Why I did this</p>
 
-            <h2>
-              The question began with someone close to me.
-            </h2>
+              <h2>
+                The question began with someone close to me.
+              </h2>
+            </div>
+
+            <div className="researchBodyCopy">
+              <p>
+                This project began with my younger brother, Mason. During my
+                sophomore year, he experienced a profound regression, yet his
+                clinical MRI showed no structural abnormality.
+              </p>
+
+              <p>
+                I began wondering what differences might exist not in the
+                appearance of the brain, but in how its regions communicate.
+                Resting-state fMRI offered a way to explore that question through
+                functional connectivity, the synchronization of activity between
+                brain regions while a person is at rest.
+              </p>
+            </div>
           </div>
-
-          <div className="researchBodyCopy">
-            <p>
-              This project began with my younger brother, Mason. During my
-              sophomore year, he experienced a profound regression, yet his
-              clinical MRI showed no structural abnormality.
-            </p>
-
-            <p>
-              I began wondering what differences might exist not in the
-              appearance of the brain, but in how its regions communicate.
-              Resting-state fMRI offered a way to explore that question through
-              functional connectivity, the synchronization of activity between
-              brain regions while a person is at rest.
-            </p>
-          </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* WHAT I DID */}
       <section className="researchDarkSection">
-        <div className="researchSectionHeading">
-          <p className="researchSectionLabel">What I did</p>
+        <Reveal delay={0.1}>
+          <div className="researchSectionHeading">
+            <p className="researchSectionLabel">What I did</p>
 
-          <h2>
-            From brain signals to a rigorous multisite machine-learning test
-          </h2>
+            <h2>
+              From brain signals to a rigorous multisite machine-learning test
+            </h2>
 
-          <p>
-            I built a complete analysis pipeline using public, de-identified
-            ABIDE neuroimaging data.
-          </p>
-        </div>
-
-        <div className="researchMethodLayout">
-          <div className="researchImageFrame researchPipelineFrame">
-            <Image
-              src="/images/research/connectivity-pipeline.png"
-              alt="Simplified brain connectivity and machine-learning pipeline"
-              fill
-              sizes="(max-width: 950px) 92vw, 54vw"
-              className="researchImage researchImageContain"
-            />
+            <p>
+              I built a complete analysis pipeline using public, de-identified
+              ABIDE neuroimaging data.
+            </p>
           </div>
+        </Reveal>
 
-          <div className="researchMethodSteps">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Build the connectome</h3>
-                <p>
-                  Converted signals from 200 brain regions into 19,900 unique
-                  pairwise connectivity features.
-                </p>
-              </div>
-            </article>
+        <Reveal delay={0.1}>        
+          <div className="researchMethodLayout">
+            <div className="researchImageFrame researchPipelineFrame">
+              <Image
+                src="/images/research/connectivity-pipeline.png"
+                alt="Simplified brain connectivity and machine-learning pipeline"
+                fill
+                sizes="(max-width: 950px) 92vw, 54vw"
+                className="researchImage researchImageContain"
+              />
+            </div>
 
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Explore the data</h3>
-                <p>
-                  Used PCA and UMAP to examine whether patterns reflected
-                  diagnosis or research site.
-                </p>
-              </div>
-            </article>
+            <div className="researchMethodSteps">
+              <Reveal delay={0.2}>
+                <article>
+                  <span>01</span>
+                  <div>
+                    <h3>Build the connectome</h3>
+                    <p>
+                      Converted signals from 200 brain regions into 19,900 unique
+                      pairwise connectivity features.
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
 
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Test generalization</h3>
-                <p>
-                  Trained logistic-regression models and tested each one on an
-                  entirely unseen hospital or scanner site.
-                </p>
-              </div>
-            </article>
+              <Reveal delay={0.4}>
+                <article>
+                  <span>02</span>
+                  <div>
+                    <h3>Explore the data</h3>
+                    <p>
+                      Used PCA and UMAP to examine whether patterns reflected
+                      diagnosis or research site.
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
 
-            <article>
-              <span>04</span>
-              <div>
-                <h3>Challenge the result</h3>
-                <p>
-                  Used permutation testing, confidence intervals, site-balanced
-                  analysis, and model interpretation to evaluate reliability.
-                </p>
-              </div>
-            </article>
+              <Reveal delay={0.6}>
+                <article>
+                  <span>03</span>
+                  <div>
+                    <h3>Test generalization</h3>
+                    <p>
+                      Trained logistic-regression models and tested each one on an
+                      entirely unseen hospital or scanner site.
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
+
+              <Reveal delay={0.8}>
+                <article>
+                  <span>04</span>
+                  <div>
+                    <h3>Challenge the result</h3>
+                    <p>
+                      Used permutation testing, confidence intervals, site-balanced
+                      analysis, and model interpretation to evaluate reliability.
+                    </p>
+                  </div>
+                </article>
+            </Reveal>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
         <div className="researchAtGlance">
           <article>
-            <strong>679</strong>
+            <strong>
+              <CountUp value={679} />
+            </strong>
             <span>Participants</span>
           </article>
 
           <article>
-            <strong>24</strong>
+            <strong>
+              <CountUp value={24} />
+            </strong>
             <span>Research sites</span>
           </article>
 
           <article>
-            <strong>200</strong>
+            <strong>
+              <CountUp value={200} />
+            </strong>
             <span>Brain regions</span>
           </article>
 
           <article>
-            <strong>19,900</strong>
+            <strong>
+              <CountUp value={19900} />
+            </strong>
             <span>Connectivity features</span>
           </article>
         </div>
@@ -367,7 +394,16 @@ export default function ResearchPage() {
         <div className="researchMetricGrid">
           {findings.map((finding) => (
             <article key={finding.label}>
-              <strong>{finding.value}</strong>
+              <strong>
+                  {finding.textValue ? (
+                    finding.textValue
+                  ) : (
+                    <CountUp
+                      value={finding.value ?? 0}
+                      decimals={finding.decimals}
+                    />
+                  )}  
+              </strong>
               <span>{finding.label}</span>
             </article>
           ))}

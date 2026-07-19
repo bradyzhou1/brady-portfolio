@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 
 type ProjectLink = {
   label: string;
@@ -181,12 +182,16 @@ export default function ProjectsPage() {
         </div>
 
         {projects.map((project, index) => (
-          <article
-            className={`projectFeatureCard ${
-              index % 2 === 1 ? "projectFeatureCardReverse" : ""
-            }`}
+          <Reveal 
             key={project.title}
+            delay={index * 0.5}
+            direction={index % 2 === 0 ? "left" : "right"}
           >
+            <article
+              className={`projectFeatureCard ${
+                index % 2 === 1 ? "projectFeatureCardReverse" : ""
+              }`}
+            >
             <div className="projectFeatureVisual">
               <Image
                 src={project.image}
@@ -247,6 +252,7 @@ export default function ProjectsPage() {
               </div>
             </div>
           </article>
+        </Reveal>
         ))}
       </section>
 
@@ -268,25 +274,34 @@ export default function ProjectsPage() {
         </div>
 
         <div className="additionalProjectsLayout">
-          <figure className="additionalProjectsVisual">
-            <div className="additionalProjectsImageFrame">
-              <Image
-                src="/images/projects/microplastics-team.JPG"
-                alt="Microplastics water mapping research team"
-                fill
-                sizes="(max-width: 900px) 92vw, 38vw"
-                className="additionalProjectsImage"
-              />
-            </div>
+          <Reveal delay={0.5}
+            direction="left"
+            className="additionalProjectsVisualReveal"
+            >
+            <figure className="additionalProjectsVisual">
+              <div className="additionalProjectsImageFrame">
+                <Image
+                  src="/images/projects/microplastics-team.JPG"
+                  alt="Microplastics water mapping research team"
+                  fill
+                  sizes="(max-width: 900px) 92vw, 38vw"
+                  className="additionalProjectsImage"
+                />
+              </div>
 
-            <figcaption>
-              Microplastics water mapping team on Lake Lanier.
-            </figcaption>
-          </figure>
-
+              <figcaption>
+                Microplastics water mapping team on Lake Lanier.
+              </figcaption>
+            </figure>
+          </Reveal>
           <div className="additionalProjectsList">
-            {additionalProjects.map((project) => (
-              <article className="additionalProjectRow" key={project.title}>
+            {additionalProjects.map((project, index) => (
+              <Reveal
+                key={project.title}
+                delay={index * 0.5}
+                direction="right"
+              >
+                <article className="additionalProjectRow">
                 <div className="additionalProjectIcon" aria-hidden="true">
                   <span />
                 </div>
@@ -314,6 +329,7 @@ export default function ProjectsPage() {
                   </a>
                 )}
               </article>
+            </Reveal>
             ))}
           </div>
         </div>

@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Geist, Newsreader } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+
+const geist = Geist({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-newsreader",
+});
+
 
 export const metadata: Metadata = {
   title: {
@@ -17,7 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"
+    className={`${geist.variable} ${newsreader.variable}`}
+    >
       <body>
         <Navbar />
         {children}

@@ -1,23 +1,32 @@
 import Link from "next/link";
 import TypingIdentity from "@/components/TypingIdentity";
 import Image from "next/image";
+import CountUp from "@/components/CountUp";
 
 const featuredProjects = [
   {
-    title: "Portfolio Website",
-    category: "Web Development",
+    title: "Microplastics Mapping",
+    category: "Environmental Research",
     description:
-      "A personal portfolio designed and built with Next.js and TypeScript to communicate research, technical work, leadership, and creative interests.",
+      "A collaborative community-research project investigating microplastic pollution in the Chattahoochee River.",
     href: "/projects",
     number: "01",
   },
   {
-    title: "Moon Rover Engineering",
-    category: "Internship at Georgia Tech",
+    title: "MathWorks M3 Challenge",
+    category: "Mathematical Modeling",
     description:
-      "A collaborative engineering project involving programming, rover design, testing, and iterative problem-solving for a simulated lunar environment.",
+      "A team-based mathematical modeling competition focused on developing and communicating a data-driven solution under time constraints.",
     href: "/projects",
     number: "02",
+  },
+  {
+    title: "Lunar Rover Engineering",
+    category: "Georgia Tech Internship",
+    description:
+      "A collaborative project involving rover design, programming, testing, and iterative engineering for a simulated lunar environment.",
+    href: "/projects",
+    number: "03",
   },
 ];
 
@@ -166,7 +175,9 @@ export default function Home() {
           <article className="snapshotCard snapshotMetricCard">
             <p className="snapshotCardLabel">Academic Record</p>
 
-            <strong>4.69</strong>
+            <strong>
+              <CountUp value={4.69} decimals={2} duration={1.5} />
+            </strong>
 
             <h3>Weighted GPA</h3>
 
@@ -181,7 +192,7 @@ export default function Home() {
           <article className="snapshotCard snapshotMetricCard">
             <p className="snapshotCardLabel">Standardized Testing</p>
 
-            <strong>1540</strong>
+            <strong><CountUp value={1540} duration={1.5} /></strong>
 
             <h3>SAT · First Sitting</h3>
 
@@ -329,22 +340,22 @@ export default function Home() {
 
           <div className="researchStats">
             <article>
-              <strong>679</strong>
+              <strong><CountUp value={679} /></strong>
               <span>Participants</span>
             </article>
 
             <article>
-              <strong>24</strong>
+              <strong><CountUp value={24} /></strong>
               <span>Research Sites</span>
             </article>
 
             <article>
-              <strong>19,900</strong>
+              <strong><CountUp value={19900} /></strong>
               <span>Connectivity Features</span>
             </article>
 
             <article>
-              <strong>0.738</strong>
+              <strong><CountUp value={0.738} decimals={3} /></strong>
               <span>LOSO ROC-AUC</span>
             </article>
           </div>
@@ -432,8 +443,8 @@ export default function Home() {
         </div> */}
 
         <div className="sectionHeading">
-          <p className="eyebrow">Other Projects</p>
-          <h2>Software beyond my featured work</h2>
+          <p className="eyebrow">Additional Projects & Team Experiences</p>
+          <h2>Exploring problems across research, modeling, and engineering</h2>
         </div>
 
         <div className="projectList">

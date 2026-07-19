@@ -271,7 +271,7 @@ export default function ProjectsPage() {
           <figure className="additionalProjectsVisual">
             <div className="additionalProjectsImageFrame">
               <Image
-                src="/images/projects/microplastics-team.jpg"
+                src="/images/projects/microplastics-team.JPG"
                 alt="Microplastics water mapping research team"
                 fill
                 sizes="(max-width: 900px) 92vw, 38vw"

@@ -19,22 +19,23 @@ export default function CountUp({
   suffix = "",
 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
+
   const isInView = useInView(ref, {
-    once: true,
-    amount: 0.6,
+    once: false,
+    amount: 0.8,
   });
 
   const prefersReducedMotion = useReducedMotion();
-  const [displayValue, setDisplayValue] = useState(
-    prefersReducedMotion ? value : 0,
-  );
+  const [displayValue, setDisplayValue] = useState(0);
 
   useEffect(() => {
-    if (!isInView || prefersReducedMotion) {
-      if (prefersReducedMotion) {
-        setDisplayValue(value);
-      }
+    if (prefersReducedMotion) {
+      setDisplayValue(value);
+      return;
+    }
 
+    if (!isInView) {
+      setDisplayValue(0);
       return;
     }
 
@@ -46,7 +47,6 @@ export default function CountUp({
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / durationMs, 1);
 
-      // Smooth ease-out curve.
       const easedProgress = 1 - Math.pow(1 - progress, 3);
 
       setDisplayValue(value * easedProgress);
@@ -62,7 +62,7 @@ export default function CountUp({
   }, [duration, isInView, prefersReducedMotion, value]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} className="countUpValue">
       {prefix}
       {displayValue.toFixed(decimals)}
       {suffix}

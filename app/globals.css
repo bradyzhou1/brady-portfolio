@@ -3977,3 +3977,13 @@ button,
 .animatedLink:focus-visible .linkArrow {
   transform: translate(3px, -3px);
 }
+
+.siteBuildNote a {
+  color: var(--accent-secondary);
+  font-weight: 700;
+}
+
+.siteBuildNote a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

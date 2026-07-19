@@ -738,7 +738,17 @@ export default function Home() {
 
       <footer className="footer">
         <p>© 2026 Brady Zhou</p>
-        <p>Designed and developed with Next.js and TypeScript.</p>
+
+        <p className="siteBuildNote">
+          Built with Next.js and TypeScript ·{" "}
+          <a
+            href="https://github.com/bradyzhou1/brady-portfolio"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View source code on GitHub ↗
+          </a>
+        </p>
       </footer>
     </main>
   );

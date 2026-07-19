@@ -1,41 +1,71 @@
 import Image from "next/image";
 
-const awards = [
+// const awards = [
+//   {
+//     level: "International",
+//     title: "Regeneron International Science and Engineering Fair",
+//     recognition: "ISEF Finalist",
+//   },
+//   {
+//     level: "State",
+//     title: "Georgia Science & Engineering Fair",
+//     recognition: "Regeneron ISEF Award - Top 4",
+//   },
+//   {
+//     level: "State",
+//     title: "Georgia Science & Engineering Fair",
+//     recognition: "Top Ten Grand Award",
+//   },
+//   {
+//     level: "State",
+//     title: "Georgia Science & Engineering Fair",
+//     recognition:
+//       "Best in Category - Computational Biology & Bioinformatics",
+//   },
+//   {
+//     level: "Special Award",
+//     title: "Citadel Securities Innovation Prize",
+//     recognition: "Exceptional Data Analysis Techniques",
+//   },
+//   {
+//     level: "State",
+//     title: "Georgia Science & Engineering Fair",
+//     recognition: "First Honor Award",
+//   },
+//   {
+//     level: "Regional",
+//     title: "Cobb-Paulding Regional Science Fair",
+//     recognition: "First Place Winner",
+//   },
+// ];
+
+const awardGroups = [
   {
     level: "International",
-    title: "Regeneron International Science and Engineering Fair",
-    recognition: "ISEF Finalist",
+    event: "Regeneron International Science and Engineering Fair",
+    shortName: "ISEF",
+    recognitions: ["ISEF Finalist"],
   },
   {
     level: "State",
-    title: "Georgia Science & Engineering Fair",
-    recognition: "Regeneron ISEF Award - Top 4",
-  },
-  {
-    level: "State",
-    title: "Georgia Science & Engineering Fair",
-    recognition: "Top Ten Grand Award",
-  },
-  {
-    level: "State",
-    title: "Georgia Science & Engineering Fair",
-    recognition:
+    event: "Georgia Science & Engineering Fair",
+    shortName: "GSEF",
+    recognitions: [
+      "Regeneron ISEF Award - Top 4",
+      "Top Ten Grand Award",
       "Best in Category - Computational Biology & Bioinformatics",
-  },
-  {
-    level: "Special Award",
-    title: "Citadel Securities Innovation Prize",
-    recognition: "Exceptional Data Analysis Techniques",
-  },
-  {
-    level: "State",
-    title: "Georgia Science & Engineering Fair",
-    recognition: "First Honor Award",
+      "First Honor Award",
+    ],
+    specialAward: {
+      title: "Citadel Securities Innovation Prize",
+      description: "Recognized for Exceptional Data Analysis Techniques",
+    },
   },
   {
     level: "Regional",
-    title: "Cobb-Paulding Regional Science Fair",
-    recognition: "First Place Winner",
+    event: "Cobb-Paulding Regional Science Fair",
+    shortName: "Regional",
+    recognitions: ["First Place Winner"],
   },
 ];
 
@@ -365,17 +395,44 @@ export default function ResearchPage() {
         </div>
 
         <div className="researchAwardsGrid">
-          {awards.map((award) => (
+          {awardGroups.map((group) => (
             <article
-              className="researchAwardCard"
-              key={`${award.title}-${award.recognition}`}
+              className={`researchAwardCard ${
+                group.specialAward ? "researchAwardCardFeatured" : ""
+              }`}
+              key={group.shortName}
             >
-              <p>{award.level}</p>
-              <h3>{award.recognition}</h3>
-              <span>{award.title}</span>
+              <div className="researchAwardCardHeader">
+                <div>
+                  <p className="researchAwardLevel">{group.level}</p>
+                  <h3>{group.shortName}</h3>
+                </div>
+
+                <span className="researchAwardCount">
+                  {group.recognitions.length}
+                  {group.recognitions.length === 1 ? " recognition" : " recognitions"}
+                </span>
+              </div>
+
+              <p className="researchAwardEvent">{group.event}</p>
+
+              <ul className="researchAwardList">
+                {group.recognitions.map((recognition) => (
+                  <li key={recognition}>{recognition}</li>
+                ))}
+              </ul>
+
+              {group.specialAward && (
+                <div className="researchSpecialAward">
+                  <p>Special Award</p>
+                  <h4>{group.specialAward.title}</h4>
+                  <span>{group.specialAward.description}</span>
+                </div>
+              )}
             </article>
           ))}
         </div>
+
       </section>
 
       {/* LINKS */}

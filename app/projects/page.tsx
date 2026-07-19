@@ -18,6 +18,16 @@ type Project = {
   links: ProjectLink[];
 };
 
+type AdditionalProject = {
+  category: string;
+  title: string;
+  description: string;
+  link?: {
+    label: string;
+    href: string;
+  };
+};
+
 const projects: Project[] = [
   {
     number: "01",
@@ -78,51 +88,34 @@ const projects: Project[] = [
       },
     ],
   },
+];
+
+const additionalProjects: AdditionalProject[] = [
   {
-    number: "03",
-    category: "Web Development",
-    title: "Portfolio Website",
+    category: "Environmental Research · Community Science",
+    title: "Microplastics Mapping in the Chattahoochee River",
     description:
-      "A responsive personal portfolio designed and developed to communicate my research, software projects, music, and leadership through a clear visual narrative. The site uses a scrolling homepage, detailed project pages, reusable components, and automated deployment.",
-    image: "/images/projects/portfolio-website.jpg",
-    imageAlt: "Screenshot of the Brady Zhou portfolio website homepage",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "React",
-      "CSS",
-      "Vercel",
-    ],
-    links: [
-      {
-        label: "GitHub",
-        href: "https://github.com/bradyzhou1/brady-portfolio",
-        primary: true,
-      },
-    ],
+      "Contributed to a community-engaged research project investigating microplastic pollution and presented the team’s work at Atlanta City Hall.",
+    link: {
+      label: "Explore Project",
+      href: "https://sites.google.com/view/microplastics-ycaf2025/home",
+    },
   },
   {
-    number: "04",
+    category: "Applied Mathematics · Data Science",
+    title: "MathWorks Math Modeling Challenge",
+    description:
+      "Collaborated with a five-student team to develop and communicate a mathematical model during a continuous 14-hour competition.",
+  },
+  {
     category: "Aerospace Engineering · Programming",
     title: "Lunar Rover Engineering",
     description:
-      "A collaborative aerospace engineering project focused on designing, programming, testing, and improving a rover for a simulated lunar environment. The project connected software development with physical engineering and iterative problem-solving.",
-    image: "/images/projects/lunar-rover.jpg",
-    imageAlt: "Lunar rover engineering prototype",
-    technologies: [
-      "Programming",
-      "Engineering Design",
-      "Prototyping",
-      "Testing",
-      "Teamwork",
-    ],
-    links: [
-      {
-        label: "Watch Project Video",
-        href: "https://www.youtube.com/watch?v=8WuslV10caI",
-        primary: true,
-      },
-    ],
+      "Collaborated on the design, programming, testing, and refinement of a rover for a simulated lunar environment.",
+    link: {
+      label: "Watch Project Video",
+      href: "https://www.youtube.com/watch?v=8WuslV10caI",
+    },
   },
 ];
 
@@ -139,40 +132,54 @@ export default function ProjectsPage() {
         <div className="projectsHeroGlow projectsHeroGlowTwo" />
 
         <div className="projectsHeroContent">
-          <p className="projectsPageEyebrow">Project Collection</p>
+          <p className="projectsPageEyebrow">Selected Work</p>
 
           <h1>
-            Research, software, and engineering built around real questions.
+            Research and technology shaped by real questions.
           </h1>
 
           <p>
-            These projects reflect how I use computer science across
-            neuroscience, family-centered technology, web development, and
-            engineering. More projects will be added as I continue learning and
-            building.
+            My flagship work combines machine learning, computational
+            neuroscience, and family-centered technology. Additional projects
+            reflect broader experience in mathematical modeling, environmental
+            research, engineering, and web development.
           </p>
         </div>
 
-        <div className="projectsHeroStats">
+        <div className="projectsHeroOverview">
           <article>
-            <strong>4</strong>
-            <span>Featured projects</span>
+            <span>Flagship work</span>
+            <strong>Research + Product Development</strong>
           </article>
 
           <article>
-            <strong>4</strong>
-            <span>Different problem spaces</span>
+            <span>Technical range</span>
+            <strong>Machine Learning · AI Systems · Full-Stack Development</strong>
           </article>
 
           <article>
-            <strong>1</strong>
-            <span>Shared purpose: build with meaning</span>
+            <span>Additional experience</span>
+            <strong>Modeling · Environmental Research · Engineering</strong>
           </article>
         </div>
+
       </section>
 
-      {/* PROJECT CARDS */}
+      {/* FLAGSHIP PROJECTS */}
       <section className="projectsCollection">
+        <div className="projectsCollectionHeader">
+          <p className="projectsPageEyebrow">Flagship Projects</p>
+
+          <h2>
+            Two substantial projects at the center of my work
+          </h2>
+
+          <p>
+            These projects represent sustained independent work, technical
+            development, personal motivation, and continued iteration.
+          </p>
+        </div>
+
         {projects.map((project, index) => (
           <article
             className={`projectFeatureCard ${
@@ -243,105 +250,113 @@ export default function ProjectsPage() {
         ))}
       </section>
 
-      {/* ADDITIONAL RESEARCH & PROBLEM SOLVING */}
+      {/* ADDITIONAL PROJECTS */}
       <section className="additionalProjectsSection">
         <div className="additionalProjectsHeader">
           <p className="projectsPageEyebrow">
-            Additional Research & Problem Solving
+            Additional Projects & Team Experiences
           </p>
 
           <h2>
-            Team-based work across environmental research, applied mathematics, and
-            scientific communication
+            Broader experience across research, modeling, and engineering
           </h2>
 
           <p>
-            These experiences expanded how I approach open-ended problems, collaborate
-            under constraints, and communicate technical ideas beyond an individual
-            project.
+            These collaborative experiences expanded how I approach open-ended
+            problems, work under constraints, and communicate technical ideas.
           </p>
         </div>
 
-        <div className="additionalProjectsGrid">
-          {/* MICROPLASTICS PROJECT */}
-          <article className="additionalProjectCard">
-            <div className="additionalProjectTop">
-              <span className="additionalProjectNumber">05</span>
-
-              <p className="additionalProjectCategory">
-                Environmental Research · Community Science
-              </p>
+        <div className="additionalProjectsLayout">
+          <figure className="additionalProjectsVisual">
+            <div className="additionalProjectsImageFrame">
+              <Image
+                src="/images/projects/microplastics-team.jpg"
+                alt="Microplastics water mapping research team"
+                fill
+                sizes="(max-width: 900px) 92vw, 38vw"
+                className="additionalProjectsImage"
+              />
             </div>
 
-            <h3>Microplastics Mapping in the Chattahoochee River</h3>
+            <figcaption>
+              Microplastics water mapping team on Lake Lanier.
+            </figcaption>
+          </figure>
 
-            <p className="additionalProjectRole">Research Team Member</p>
+          <div className="additionalProjectsList">
+            {additionalProjects.map((project) => (
+              <article className="additionalProjectRow" key={project.title}>
+                <div className="additionalProjectIcon" aria-hidden="true">
+                  <span />
+                </div>
 
-            <p className="additionalProjectDescription">
-              Contributed to a community-engaged research project investigating
-              microplastic pollution in the Chattahoochee River. The project connected
-              environmental research with local public awareness and community impact.
-            </p>
+                <div className="additionalProjectRowContent">
+                  <p className="additionalProjectCategory">
+                    {project.category}
+                  </p>
 
-            <p className="additionalProjectContext">
-              Supported by the Atlanta Mayor’s Office Youth Climate Action Fund and
-              Bloomberg Philanthropies. The research team presented the project and
-              poster at Atlanta City Hall.
-            </p>
+                  <h3>{project.title}</h3>
 
-            <a
-              href="https://sites.google.com/view/microplastics-ycaf2025/home"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="additionalProjectLink"
-            >
-              Explore the Project
-            </a>
+                  <p className="additionalProjectDescription">
+                    {project.description}
+                  </p>
+                </div>
 
-            <div className="additionalProjectTags">
-              <span>Environmental Research</span>
-              <span>Community Science</span>
-              <span>Team Collaboration</span>
-              <span>Scientific Communication</span>
-            </div>
-          </article>
-
-          {/* M3 CHALLENGE */}
-          <article className="additionalProjectCard">
-            <div className="additionalProjectTop">
-              <span className="additionalProjectNumber">06</span>
-
-              <p className="additionalProjectCategory">
-                Applied Mathematics · Data Science
-              </p>
-            </div>
-
-            <h3>MathWorks Math Modeling Challenge</h3>
-
-            <p className="additionalProjectRole">Modeling Team Member</p>
-
-            <p className="additionalProjectDescription">
-              Collaborated with a five-student team under a continuous 14-hour time
-              constraint to address an open-ended real-world problem using applied
-              mathematics, data analysis, and computational modeling.
-            </p>
-
-            <p className="additionalProjectContext">
-              The team developed and communicated its solution through a 35-page
-              research-style paper, balancing model development, interpretation,
-              technical writing, and teamwork within a single-day deadline.
-            </p>
-
-            <div className="additionalProjectTags">
-              <span>Mathematical Modeling</span>
-              <span>Data Science</span>
-              <span>Technical Writing</span>
-              <span>Time-Constrained Teamwork</span>
-            </div>
-          </article>
+                {project.link && (
+                  <a
+                    href={project.link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="additionalProjectRowLink"
+                  >
+                    {project.link.label} ↗
+                  </a>
+                )}
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
+
+
+
+      {/* ABOUT THIS SITE */}
+      <section className="projectsSiteNote">
+        <div className="projectsSiteNoteHeading">
+          <p className="projectsPageEyebrow">About This Site</p>
+
+          <h2>
+            Designed and built as part of the portfolio itself.
+          </h2>
+        </div>
+
+        <div className="projectsSiteNoteContent">
+          <p>
+            I developed this website using Next.js, React, TypeScript, and
+            CSS, creating its visual system, reusable components, responsive
+            layouts, and deployment workflow.
+          </p>
+
+          <div className="projectsSiteTechnologies">
+            <span>Next.js</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>CSS</span>
+            <span>Vercel</span>
+          </div>
+
+          <a
+            href="https://github.com/bradyzhou1/brady-portfolio"
+            target="_blank"
+            rel="noreferrer"
+            className="projectsSiteLink"
+          >
+            View source on GitHub ↗
+          </a>
+        </div>
+      </section>
 
       {/* CLOSING */}
       <section className="projectsClosing">

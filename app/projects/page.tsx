@@ -118,8 +118,8 @@ const projects: Project[] = [
     ],
     links: [
       {
-        label: "GitHub",
-        href: "REPLACE_WITH_ROVER_GITHUB_URL",
+        label: "Watch Project Video",
+        href: "https://www.youtube.com/watch?v=8WuslV10caI",
         primary: true,
       },
     ],

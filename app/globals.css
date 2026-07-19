@@ -3344,6 +3344,22 @@ p {
   grid-column: span 2;
 }
 
+.snapshotWideCard .skillGroups > div {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.snapshotWideCard .skillGroups h4 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+}
+
+.snapshotWideCard .skillGroups p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .snapshotList {
   margin: 0;
   padding: 0;
@@ -3389,6 +3405,19 @@ p {
   line-height: 1.65;
 }
 
+.snapshotResearchCard {
+  grid-column: span 2;
+  min-height: auto;
+  padding: 30px 34px;
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(79, 70, 229, 0.12),
+      transparent 34%
+    ),
+    white;
+}
+
 /* Tablet */
 
 @media (max-width: 950px) {
@@ -3417,7 +3446,8 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .snapshotWideCard {
+  .snapshotWideCard,
+  .snapshotResearchCard {
     grid-column: auto;
   }
 

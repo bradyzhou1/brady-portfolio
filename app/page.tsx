@@ -192,21 +192,17 @@ export default function Home() {
             </p>
           </article>
 
-          {/* SENIOR COURSEWORK */}
+          {/* ACADEMIC RECOGNITION */}
           <article className="snapshotCard">
-            <p className="snapshotCardLabel">Academic Rigor</p>
+            <p className="snapshotCardLabel">Selected Recognition</p>
 
-            <h3>Senior Coursework</h3>
+            <h3>Academic Honors</h3>
 
             <ul className="snapshotList">
-              <li>AP Cybersecurity</li>
-              <li>Georgia Tech Multivariable Calculus</li>
-              <li>Georgia Tech Linear Algebra</li>
-              <li>AP Research</li>
-              <li>AP Biology</li>
-              <li>AP English Lit</li>
-              <li>AP World History</li>
-              <li>Chamber Orchestra</li>
+              <li>Georgia Certificate of Merit</li>
+              <li>Outstanding Achievement — STEM Academy</li>
+              <li>Outstanding Achievement — English Department</li>
+              <li>AP Scholar with Distinction</li>
             </ul>
           </article>
 
@@ -219,21 +215,17 @@ export default function Home() {
             <div className="skillGroups">
               <div>
                 <h4>Programming</h4>
-                <p>Python · TypeScript · Java · SQL</p>
+                <p>Python · Java · TypeScript · HTML/CSS · SQL</p>
               </div>
 
               <div>
                 <h4>Machine Learning</h4>
-                <p>
-                  scikit-learn · XGBoost · PyTorch · Graph Neural Networks
-                </p>
+                <p>scikit-learn · XGBoost · PyTorch · Graph Neural Networks</p>
               </div>
 
               <div>
                 <h4>AI & Data Systems</h4>
-                <p>
-                  RAG · Vector Databases · Local LLMs · Data Visualization
-                </p>
+                <p>RAG · Vector Databases · Local LLMs · Data Visualization</p>
               </div>
 
               <div>
@@ -243,17 +235,21 @@ export default function Home() {
             </div>
           </article>
 
-          {/* ACADEMIC RECOGNITION */}
+          {/* SENIOR COURSEWORK */}
           <article className="snapshotCard">
-            <p className="snapshotCardLabel">Selected Recognition</p>
+            <p className="snapshotCardLabel">Academic Rigor</p>
 
-            <h3>Academic Honors</h3>
+            <h3>Senior Coursework</h3>
 
             <ul className="snapshotList">
-              <li>Georgia Certificate of Merit</li>
-              <li>Outstanding Achievement - STEM Academy</li>
-              <li>Outstanding Achievement - English Department</li>
-              <li>AP Scholar with Distinction</li>
+              <li>AP Cybersecurity</li>
+              <li>Georgia Tech Multivariable Calculus</li>
+              <li>Georgia Tech Linear Algebra</li>
+              <li>AP Research</li>
+              <li>AP Biology</li>
+              <li>AP English Literature</li>
+              <li>AP World History</li>
+              <li>Chamber Orchestra</li>
             </ul>
           </article>
 
@@ -264,12 +260,35 @@ export default function Home() {
             <h3>Technical Experiences</h3>
 
             <ul className="snapshotList">
-              <li>Georgia Tech STEP - Aerospace Engineering</li>
+              <li>Georgia Tech STEP — Aerospace Engineering</li>
               <li>Seth Bonder Computational & Data Science Camp</li>
               <li>Independent AI/ML Research</li>
               <li>ParentLensAI Development & Beta Testing</li>
             </ul>
+          </article> 
+
+          {/* CURRENT RESEARCH MILESTONE */}
+          <article className="snapshotCard snapshotResearchCard">
+            <div className="snapshotResearchContent">
+              <div>
+                <p className="snapshotCardLabel">Current Research Milestone</p>
+
+                <h3>Preparing for the 2027 Regeneron Science Talent Search</h3>
+
+                <p>
+                  Building on the autism brain-connectivity study I presented at
+                  Regeneron ISEF, I am preparing an expanded research report for
+                  submission to the 2027 Regeneron Science Talent Search.
+                </p>
+              </div>
+
+              <div className="snapshotResearchStatus">
+                <span>2027</span>
+                <p>Planned STS Submission</p>
+              </div>
+            </div>
           </article>
+         
         </div>
       </section>
 

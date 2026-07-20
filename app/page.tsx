@@ -378,8 +378,8 @@ export default function Home() {
 
             <div className="productScreenshotFrame">
               <Image
-                src="/images/parentlensai/parentlensai-dashboard.png"
-                alt="ParentLensAI dashboard showing records, tasks, notes, and trends"
+                src="/images/parentlensai/parentlensai-architecture.png"
+                alt="ParentLensAI architecture dashboard showing records, tasks, notes, and trends"
                 fill
                 sizes="(max-width: 950px) 92vw, 52vw"
                 className="productScreenshot"
@@ -740,7 +740,7 @@ export default function Home() {
         <p>© 2026 Brady Zhou</p>
 
         <p className="siteBuildNote">
-          Built with Next.js and TypeScript ·{" "}
+          {/* Built with Next.js and TypeScript ·{" "} */}
           <a
             href="https://github.com/bradyzhou1/brady-portfolio"
             target="_blank"

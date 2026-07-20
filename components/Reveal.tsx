@@ -44,8 +44,8 @@ export default function Reveal({
         y: 0,
       }}
       viewport={{
-        once: true,
-        amount,
+        once: false,
+        amount: 0.35,
       }}
       transition={{
         duration: 0.65,

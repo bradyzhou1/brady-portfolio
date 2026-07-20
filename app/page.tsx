@@ -2,6 +2,7 @@ import Link from "next/link";
 import TypingIdentity from "@/components/TypingIdentity";
 import Image from "next/image";
 import CountUp from "@/components/CountUp";
+import Reveal from "@/components/Reveal";
 
 const featuredProjects = [
   {
@@ -82,74 +83,79 @@ export default function Home() {
 
       {/* ABOUT */}
       <section id="about" className="contentSection aboutSection">
-        <div className="aboutVisuals">
-          <div className="aboutPhoto aboutPhotoPrimary">
-            <Image
-              src="/images/dis.jpg"
-              alt="Portrait of Brady Zhou"
-              fill
-              sizes="(max-width: 900px) 90vw, 36vw"
-              className="aboutImage"
-            />
+        <Reveal direction="left" amount={0.25}>
+          <div className="aboutVisuals">
+            <div className="aboutPhoto aboutPhotoPrimary">
+              <Image
+                src="/images/dis.jpg"
+                alt="Portrait of Brady Zhou"
+                fill
+                sizes="(max-width: 900px) 90vw, 36vw"
+                className="aboutImage"
+              />
+            </div>
+
+            <div className="aboutPhoto aboutPhotoSecondary">
+              <Image
+                src="/images/Brady-2025-AllState.jpg"
+                alt="All-State 2025"
+                fill
+                sizes="(max-width: 900px) 70vw, 25vw"
+                className="aboutImage"
+              />
+            </div>
           </div>
+        </Reveal>
 
-          <div className="aboutPhoto aboutPhotoSecondary">
-            <Image
-              src="/images/Brady-2025-AllState.jpg"
-              alt="All-State 2025"
-              fill
-              sizes="(max-width: 900px) 70vw, 25vw"
-              className="aboutImage"
-            />
+        <Reveal direction="right" amount={0.2} delay={0.08}>
+          <div className="aboutContent">
+            <p className="eyebrow">About Me</p>
+
+            <h2>
+              I began building because some questions felt too personal to leave
+              unanswered.
+            </h2>
+
+            <div className="aboutStory">
+              <p>
+                I am a student researcher, developer, violinist, and student leader interested 
+                in how computer science can help us better understand people and respond to real needs.
+              </p>
+
+              <p>
+                Much of that interest grew from my relationship with my younger brother, Mason, 
+                who is autistic. During my sophomore year, he experienced a profound regression. 
+                Although his clinical MRI showed no structural abnormality, I was left wondering 
+                what changes in the brain might not be visible through conventional imaging. 
+                That question led me to study autism-related patterns in functional brain connectivity 
+                using resting-state fMRI. I developed a machine-learning research pipeline, investigated 
+                how validation methods and research-site differences could influence results, 
+                and ultimately presented the project as a Regeneron ISEF finalist.             
+              </p>
+                
+              <p>
+                At the same time, I watched my family navigate therapy notes, medical records, 
+                school documents, medications, and long periods of uncertainty. I began to see 
+                how fragmented information can make an already difficult process even harder. 
+                That experience inspired ParentLensAI, an AI-powered platform that uses large 
+                language models, retrieval-augmented generation, and vector search to help families 
+                organize and understand educational, medical, therapeutic, and daily-life information 
+                in one connected system.
+              </p>
+
+              <p>
+                Outside of technology, violin has taught me patience, discipline, and how to listen 
+                closely to others. Leadership roles in my school, student organizations, and community 
+                initiatives have taught me how to communicate, take responsibility, 
+                and help a group move toward a shared goal. Whether I am conducting research, 
+                building software, solving an engineering problem, rehearsing with an orchestra, 
+                or leading a team, I am drawn to the same process: observe carefully, ask better 
+                questions, collaborate thoughtfully, and build with purpose.
+              </p>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="aboutContent">
-          <p className="eyebrow">About Me</p>
-
-          <h2>
-            I began building because some questions felt too personal to leave
-            unanswered.
-          </h2>
-
-          <div className="aboutStory">
-            <p>
-              I am a student researcher, developer, violinist, and student leader interested 
-              in how computer science can help us better understand people and respond to real needs.
-            </p>
-
-            <p>
-              Much of that interest grew from my relationship with my younger brother, Mason, 
-              who is autistic. During my sophomore year, he experienced a profound regression. 
-              Although his clinical MRI showed no structural abnormality, I was left wondering 
-              what changes in the brain might not be visible through conventional imaging. 
-              That question led me to study autism-related patterns in functional brain connectivity 
-              using resting-state fMRI. I developed a machine-learning research pipeline, investigated 
-              how validation methods and research-site differences could influence results, 
-              and ultimately presented the project as a Regeneron ISEF finalist.             
-            </p>
-              
-            <p>
-              At the same time, I watched my family navigate therapy notes, medical records, 
-              school documents, medications, and long periods of uncertainty. I began to see 
-              how fragmented information can make an already difficult process even harder. 
-              That experience inspired ParentLensAI, an AI-powered platform that uses large 
-              language models, retrieval-augmented generation, and vector search to help families 
-              organize and understand educational, medical, therapeutic, and daily-life information 
-              in one connected system.
-            </p>
-
-            <p>
-              Outside of technology, violin has taught me patience, discipline, and how to listen 
-              closely to others. Leadership roles in my school, student organizations, and community 
-              initiatives have taught me how to communicate, take responsibility, 
-              and help a group move toward a shared goal. Whether I am conducting research, 
-              building software, solving an engineering problem, rehearsing with an orchestra, 
-              or leading a team, I am drawn to the same process: observe carefully, ask better 
-              questions, collaborate thoughtfully, and build with purpose.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* ACADEMIC & TECHNICAL SNAPSHOT */}
@@ -157,149 +163,153 @@ export default function Home() {
         id="academic-technical"
         className="contentSection snapshotSection"
       >
-        <div className="snapshotHeader">
-          <p className="eyebrow">Academic & Technical Snapshot</p>
+        <Reveal amount={0.3}>
+          <div className="snapshotHeader">
+            <p className="eyebrow">Academic & Technical Snapshot</p>
 
-          <h2>
-            Preparation across academics, computing, research, and engineering
-          </h2>
+            <h2>
+              Preparation across academics, computing, research, and engineering
+            </h2>
 
-          <p>
-            A concise view of my academic foundation, technical experience, and
-            continuing growth as a student researcher and developer.
-          </p>
-        </div>
+            <p>
+              A concise view of my academic foundation, technical experience, and
+              continuing growth as a student researcher and developer.
+            </p>
+          </div>
+        </Reveal>  
 
         <div className="snapshotGrid">
           {/* GPA */}
           <article className="snapshotCard snapshotMetricCard">
-            <p className="snapshotCardLabel">Academic Record</p>
+              <p className="snapshotCardLabel">Academic Record</p>
 
-            <strong>
-              <CountUp value={4.69} decimals={2} duration={1.5} />
-            </strong>
+              <strong>
+                <CountUp value={4.69} decimals={2} duration={1.5} />
+              </strong>
 
-            <h3>Weighted GPA</h3>
+              <h3>Weighted GPA</h3>
 
-            <p>
-              4.0 unweighted
-              <br />
-              As of the end of 11th grade
-            </p>
+              <p>
+                4.0 unweighted
+                <br />
+                As of the end of 11th grade
+              </p>
           </article>
 
           {/* SAT */}
           <article className="snapshotCard snapshotMetricCard">
-            <p className="snapshotCardLabel">Standardized Testing</p>
+              <p className="snapshotCardLabel">Standardized Testing</p>
 
-            <strong><CountUp value={1540} duration={1.5} /></strong>
+              <strong><CountUp value={1540} duration={1.5} /></strong>
 
-            <h3>SAT · First Sitting</h3>
+              <h3>SAT · First Sitting</h3>
 
-            <p>
-              790 Math
-              <br />
-              750 Reading & Writing
-            </p>
+              <p>
+                790 Math
+                <br />
+                750 Reading & Writing
+              </p>
           </article>
 
           {/* ACADEMIC RECOGNITION */}
           <article className="snapshotCard">
-            <p className="snapshotCardLabel">Selected Recognition</p>
+              <p className="snapshotCardLabel">Selected Recognition</p>
 
-            <h3>Academic Honors</h3>
+              <h3>Academic Honors</h3>
 
-            <ul className="snapshotList">
-              <li>Georgia Certificate of Merit</li>
-              <li>Outstanding Achievement — STEM Academy</li>
-              <li>Outstanding Achievement — English Department</li>
-              <li>AP Scholar with Distinction</li>
-            </ul>
+              <ul className="snapshotList">
+                <li>Georgia Certificate of Merit</li>
+                <li>Outstanding Achievement — STEM Academy</li>
+                <li>Outstanding Achievement — English Department</li>
+                <li>AP Scholar with Distinction</li>
+              </ul>
           </article>
 
           {/* COMPUTER SCIENCE SKILLS */}
           <article className="snapshotCard snapshotWideCard">
-            <p className="snapshotCardLabel">Technical Foundation</p>
+              <p className="snapshotCardLabel">Technical Foundation</p>
 
-            <h3>Computer Science Skills</h3>
+              <h3>Computer Science Skills</h3>
 
-            <div className="skillGroups">
-              <div>
-                <h4>Programming</h4>
-                <p>Python · Java · TypeScript · HTML/CSS · SQL</p>
+              <div className="skillGroups">
+                <div>
+                  <h4>Programming</h4>
+                  <p>Python · Java · TypeScript · HTML/CSS · SQL</p>
+                </div>
+
+                <div>
+                  <h4>Machine Learning</h4>
+                  <p>scikit-learn · XGBoost · PyTorch · Graph Neural Networks</p>
+                </div>
+
+                <div>
+                  <h4>AI & Data Systems</h4>
+                  <p>RAG · Vector Databases · Local LLMs · Data Visualization</p>
+                </div>
+
+                <div>
+                  <h4>Development</h4>
+                  <p>Next.js · React · Streamlit · Git · GitHub</p>
+                </div>
               </div>
-
-              <div>
-                <h4>Machine Learning</h4>
-                <p>scikit-learn · XGBoost · PyTorch · Graph Neural Networks</p>
-              </div>
-
-              <div>
-                <h4>AI & Data Systems</h4>
-                <p>RAG · Vector Databases · Local LLMs · Data Visualization</p>
-              </div>
-
-              <div>
-                <h4>Development</h4>
-                <p>Next.js · React · Streamlit · Git · GitHub</p>
-              </div>
-            </div>
           </article>
 
           {/* SENIOR COURSEWORK */}
           <article className="snapshotCard">
-            <p className="snapshotCardLabel">Academic Rigor</p>
+              <p className="snapshotCardLabel">Academic Rigor</p>
 
-            <h3>Senior Coursework</h3>
+              <h3>Senior Coursework</h3>
 
-            <ul className="snapshotList">
-              <li>AP Cybersecurity</li>
-              <li>Georgia Tech Multivariable Calculus</li>
-              <li>Georgia Tech Linear Algebra</li>
-              <li>AP Research</li>
-              <li>AP Biology</li>
-              <li>AP English Literature</li>
-              <li>AP World History</li>
-              <li>Chamber Orchestra</li>
-            </ul>
+              <ul className="snapshotList">
+                <li>AP Cybersecurity</li>
+                <li>Georgia Tech Multivariable Calculus</li>
+                <li>Georgia Tech Linear Algebra</li>
+                <li>AP Research</li>
+                <li>AP Biology</li>
+                <li>AP English Literature</li>
+                <li>AP World History</li>
+                <li>Chamber Orchestra</li>
+              </ul>
           </article>
 
           {/* TECHNICAL EXPERIENCES */}
           <article className="snapshotCard">
-            <p className="snapshotCardLabel">Beyond the Classroom</p>
+              <p className="snapshotCardLabel">Beyond the Classroom</p>
 
-            <h3>Technical Experiences</h3>
+              <h3>Technical Experiences</h3>
 
-            <ul className="snapshotList">
-              <li>Georgia Tech STEP — Aerospace Engineering</li>
-              <li>Seth Bonder Computational & Data Science Camp</li>
-              <li>Independent AI/ML Research</li>
-              <li>ParentLensAI Development & Beta Testing</li>
-            </ul>
+              <ul className="snapshotList">
+                <li>Georgia Tech STEP — Aerospace Engineering</li>
+                <li>Seth Bonder Computational & Data Science Camp</li>
+                <li>Independent AI/ML Research</li>
+                <li>ParentLensAI Development & Beta Testing</li>
+              </ul>
           </article> 
 
           {/* CURRENT RESEARCH MILESTONE */}
           <article className="snapshotCard snapshotResearchCard">
-            <div className="snapshotResearchContent">
-              <div>
-                <p className="snapshotCardLabel">Current Research Milestone</p>
+              <div className="snapshotResearchContent">
+                <div>
+                  <p className="snapshotCardLabel">Current Research Milestone</p>
 
-                <h3>Preparing for the 2027 Regeneron Science Talent Search</h3>
+                  <h3>Preparing for the 2027 Regeneron Science Talent Search</h3>
 
-                <p>
-                  Building on the autism brain-connectivity study I presented at
-                  Regeneron ISEF, I am preparing an expanded research report for
-                  submission to the 2027 Regeneron Science Talent Search.
-                </p>
+                  <p>
+                    Building on the autism brain-connectivity study I presented at
+                    Regeneron ISEF, I am preparing an expanded research report for
+                    submission to the 2027 Regeneron Science Talent Search.
+                  </p>
+                </div>
+
+                <div className="snapshotResearchStatus">
+                  <span>2027</span>
+                  <p>Planned STS Submission</p>
+                </div>
               </div>
-
-              <div className="snapshotResearchStatus">
-                <span>2027</span>
-                <p>Planned STS Submission</p>
-              </div>
-            </div>
           </article>
-         
+        
+
+
         </div>
       </section>
 
@@ -365,72 +375,78 @@ export default function Home() {
       {/* PARENTLENSAI */}
       <section id="parentlensai" className="contentSection productSection">
         <div className="productLayout">
-          <div className="productVisual">
-            <div className="productBrand">
-              <Image
-                src="/images/parentlensai/logo.png"
-                alt="ParentLensAI logo"
-                width={784}
-                height={200}
-                className="productLogo"
-              />
+
+          <Reveal direction="left" amount={0.25}>
+            <div className="productVisual">
+              <div className="productBrand">
+                <Image
+                  src="/images/parentlensai/logo.png"
+                  alt="ParentLensAI logo"
+                  width={784}
+                  height={200}
+                  className="productLogo"
+                />
+              </div>
+
+              <div className="productScreenshotFrame">
+                <Image
+                  src="/images/parentlensai/parentlensai-architecture.png"
+                  alt="ParentLensAI architecture dashboard showing records, tasks, notes, and trends"
+                  fill
+                  sizes="(max-width: 950px) 92vw, 52vw"
+                  className="productScreenshot"
+                />
+              </div>
+
+              <p className="productCaption">
+                A connected workspace for records, questions, daily observations, and
+                long-term progress.
+              </p>
             </div>
+          </Reveal>
+          
+          <Reveal direction="right" amount={0.25} delay={0.08}>
+            <div className="productDescription">
+              <p className="eyebrow">ParentLensAI</p>
 
-            <div className="productScreenshotFrame">
-              <Image
-                src="/images/parentlensai/parentlensai-architecture.png"
-                alt="ParentLensAI architecture dashboard showing records, tasks, notes, and trends"
-                fill
-                sizes="(max-width: 950px) 92vw, 52vw"
-                className="productScreenshot"
-              />
+              <h2>
+                Turning fragmented family information into a connected picture
+              </h2>
+
+              <p>
+                Families of children with complex needs often manage years of IEPs,
+                evaluations, medical records, therapy notes, medications, school
+                information, appointments, and daily observations across separate
+                systems.
+              </p>
+
+              <p>
+                ParentLensAI brings those pieces together in one local-first platform.
+                It combines intelligent document search, retrieval-augmented
+                generation, structured tracking, dashboards, tasks, and notes to help
+                parents understand information in context rather than one document at
+                a time.
+              </p>
+
+              <ul className="featureList">
+                <li>Document upload, indexing, summaries, and semantic search</li>
+                <li>RAG-based questions grounded in family records</li>
+                <li>Medication, academic, and progress trend visualization</li>
+                <li>Local data storage with optional local AI models</li>
+              </ul>
+
+              <p className="parentLensBetaNote">
+                ParentLensAI is currently in beta testing with parents of children with
+                special needs, gathering feedback on usability, usefulness, and
+                privacy-conscious design.
+              </p>
+
+              <Link href="/parentlensai" className="parentLensHomeButton">
+                Explore the Full Project
+              </Link>
             </div>
+          </Reveal>
 
-            <p className="productCaption">
-              A connected workspace for records, questions, daily observations, and
-              long-term progress.
-            </p>
-          </div>
-
-          <div className="productDescription">
-            <p className="eyebrow">ParentLensAI</p>
-
-            <h2>
-              Turning fragmented family information into a connected picture
-            </h2>
-
-            <p>
-              Families of children with complex needs often manage years of IEPs,
-              evaluations, medical records, therapy notes, medications, school
-              information, appointments, and daily observations across separate
-              systems.
-            </p>
-
-            <p>
-              ParentLensAI brings those pieces together in one local-first platform.
-              It combines intelligent document search, retrieval-augmented
-              generation, structured tracking, dashboards, tasks, and notes to help
-              parents understand information in context rather than one document at
-              a time.
-            </p>
-
-            <ul className="featureList">
-              <li>Document upload, indexing, summaries, and semantic search</li>
-              <li>RAG-based questions grounded in family records</li>
-              <li>Medication, academic, and progress trend visualization</li>
-              <li>Local data storage with optional local AI models</li>
-            </ul>
-
-            <p className="parentLensBetaNote">
-              ParentLensAI is currently in beta testing with parents of children with
-              special needs, gathering feedback on usability, usefulness, and
-              privacy-conscious design.
-            </p>
-
-            <Link href="/parentlensai" className="parentLensHomeButton">
-              Explore the Full Project
-            </Link>
-          </div>
         </div>
       </section>
 

@@ -318,55 +318,63 @@ export default function ResearchPage() {
 
         <div className="researchFindingsLayout">
           <div className="researchFindingText">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Subtle and distributed</h3>
-                <p>
-                  Autism-related connectivity differences appeared across many
-                  brain-network interactions rather than in one isolated brain
-                  region.
-                </p>
-              </div>
-            </article>
+            <Reveal delay={0.2}>
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Subtle and distributed</h3>
+                  <p>
+                    Autism-related connectivity differences appeared across many
+                    brain-network interactions rather than in one isolated brain
+                    region.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
 
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Site effects were powerful</h3>
-                <p>
-                  Scanner and research-site differences were substantially
-                  stronger than diagnosis effects, making strict multisite
-                  validation essential.
-                </p>
-              </div>
-            </article>
+            <Reveal delay={0.4}>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Site effects were powerful</h3>
+                  <p>
+                    Scanner and research-site differences were substantially
+                    stronger than diagnosis effects, making strict multisite
+                    validation essential.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
 
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Above chance, not diagnostic</h3>
-                <p>
-                  The model performed significantly above chance on unseen
-                  sites, but its accuracy was not sufficient for standalone
-                  clinical diagnosis.
-                </p>
-              </div>
-            </article>
+            <Reveal delay={0.6}>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Above chance, not diagnostic</h3>
+                  <p>
+                    The model performed significantly above chance on unseen
+                    sites, but its accuracy was not sufficient for standalone
+                    clinical diagnosis.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
 
-            <article>
-              <span>04</span>
-              <div>
-                <h3>Biologically meaningful network patterns</h3>
-                <p>
-                  The most informative and reproducible connections were centered on
-                  interactions between limbic, attention, control, sensory-motor, and
-                  default-mode networks. These patterns are consistent with commonly
-                  reported autism-related differences in emotion regulation, sensory
-                  processing, and attentional shifting.
-                </p>
-              </div>
-            </article>
+            <Reveal delay={0.8}>
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Biologically meaningful network patterns</h3>
+                  <p>
+                    The most informative and reproducible connections were centered on
+                    interactions between limbic, attention, control, sensory-motor, and
+                    default-mode networks. These patterns are consistent with commonly
+                    reported autism-related differences in emotion regulation, sensory
+                    processing, and attentional shifting.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
 
           </div>
 

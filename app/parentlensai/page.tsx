@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
 
 const features = [
   {
@@ -118,216 +120,253 @@ export default function ParentLensAIPage() {
       {/* WHY */}
       <section className="parentLensLightSection">
         <div className="parentLensTwoColumn">
-          <div>
-            <p className="parentLensSectionLabel">Why I built it</p>
 
-            <h2>
-              The challenge was not a lack of information. It was that the
-              information was everywhere.
-            </h2>
-          </div>
+          <Reveal direction="left" amount={0.3}>
+            <div>
+              <p className="parentLensSectionLabel">Why I built it</p>
 
-          <div className="parentLensBodyCopy">
-            <p>
-              Families of children with complex needs often manage years of
-              IEPs, evaluations, therapy notes, medical records, medications,
-              school updates, appointments, and daily observations.
-            </p>
+              <h2>
+                The challenge was not a lack of information. It was that the
+                information was everywhere.
+              </h2>
+            </div>
+          </Reveal>
 
-            <p>
-              I saw this challenge in my own family while helping care for my
-              younger brother, Mason. Important details existed across folders,
-              documents, conversations, and memories, but there was no simple
-              way to see how they connected.
-            </p>
+          <Reveal direction="right" amount={0.3} delay={0.08}>
+            <div className="parentLensBodyCopy">
+              <p>
+                Families of children with complex needs often manage years of
+                IEPs, evaluations, therapy notes, medical records, medications,
+                school updates, appointments, and daily observations.
+              </p>
 
-            <p>
-              ParentLensAI began as an attempt to turn that fragmented
-              information into a clearer and more useful picture.
-            </p>
-          </div>
+              <p>
+                I saw this challenge in my own family while helping care for my
+                younger brother, Mason. Important details existed across folders,
+                documents, conversations, and memories, but there was no simple
+                way to see how they connected.
+              </p>
+
+              <p>
+                ParentLensAI began as an attempt to turn that fragmented
+                information into a clearer and more useful picture.
+              </p>
+            </div>
+          </Reveal>
+
         </div>
       </section>
 
       {/* PROBLEM */}
       <section className="parentLensDarkSection">
-        <div className="parentLensSectionHeading">
-          <p className="parentLensSectionLabel">The problem</p>
+        <Reveal amount={0.3}>
+          <div className="parentLensSectionHeading">
+            <p className="parentLensSectionLabel">The problem</p>
 
-          <h2>
-            Families need more than file storage.
-          </h2>
+            <h2>
+              Families need more than file storage.
+            </h2>
 
-          <p>
-            A folder can preserve information, but it does not explain how one
-            record relates to another, reveal changes over time, or help a
-            parent prepare the right question.
-          </p>
-        </div>
-
-        <div className="parentLensProblemGrid">
-          <article>
-            <span>01</span>
-            <h3>Fragmented records</h3>
             <p>
-              Educational, medical, therapy, and home observations often live
-              in separate systems and document formats.
+              A folder can preserve information, but it does not explain how one
+              record relates to another, reveal changes over time, or help a
+              parent prepare the right question.
             </p>
-          </article>
+          </div>
+        </Reveal>
 
-          <article>
-            <span>02</span>
-            <h3>Information overload</h3>
-            <p>
-              Long reports contain valuable details, but locating one specific
-              recommendation or historical change can take significant time.
-            </p>
-          </article>
+        <Reveal amount={0.2} delay={0.08}>
+          <div className="parentLensProblemGrid">
+            <article>
+              <span>01</span>
+              <h3>Fragmented records</h3>
+              <p>
+                Educational, medical, therapy, and home observations often live
+                in separate systems and document formats.
+              </p>
+            </article>
 
-          <article>
-            <span>03</span>
-            <h3>Lost context</h3>
-            <p>
-              Notes, tasks, medication changes, and school performance may only
-              become meaningful when viewed together.
-            </p>
-          </article>
+            <article>
+              <span>02</span>
+              <h3>Information overload</h3>
+              <p>
+                Long reports contain valuable details, but locating one specific
+                recommendation or historical change can take significant time.
+              </p>
+            </article>
 
-          <article>
-            <span>04</span>
-            <h3>Difficult preparation</h3>
-            <p>
-              Parents often need to reconstruct months or years of information
-              before school meetings, appointments, or care decisions.
-            </p>
-          </article>
-        </div>
+            <article>
+              <span>03</span>
+              <h3>Lost context</h3>
+              <p>
+                Notes, tasks, medication changes, and school performance may only
+                become meaningful when viewed together.
+              </p>
+            </article>
+
+            <article>
+              <span>04</span>
+              <h3>Difficult preparation</h3>
+              <p>
+                Parents often need to reconstruct months or years of information
+                before school meetings, appointments, or care decisions.
+              </p>
+            </article>
+          </div>
+        </Reveal>
       </section>
 
       {/* WHAT IT DOES */}
       <section id="features" className="parentLensLightSection">
-        <div className="parentLensSectionHeading">
-          <p className="parentLensSectionLabel">What it does</p>
+        <Reveal amount={0.3}>
+          <div className="parentLensSectionHeading">
+            <p className="parentLensSectionLabel">What it does</p>
 
-          <h2>
-            From scattered records to connected understanding
-          </h2>
+            <h2>
+              From scattered records to connected understanding
+            </h2>
 
-          <p>
-            ParentLensAI combines document intelligence, conversational search,
-            structured tracking, and day-to-day organization in one platform.
-          </p>
-        </div>
+            <p>
+              ParentLensAI combines document intelligence, conversational search,
+              structured tracking, and day-to-day organization in one platform.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="parentLensFeatureLayout">
-          <div className="parentLensFeatureText">
-            {features.map((feature) => (
-              <article key={feature.number}>
-                <span>{feature.number}</span>
+          <Reveal
+            className="parentLensFeatureText"
+            direction="left"
+            amount={0.2}
+          >        
+            <div className="parentLensFeatureText">
+              {features.map((feature) => (
+                <article key={feature.number}>
+                  <span>{feature.number}</span>
 
-                <div>
-                  <h3>{feature.title}</h3>
-                  <p>{feature.description}</p>
+                  <div>
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </Reveal> 
+
+          <Reveal
+            className="parentLensFeatureVisuals"
+            direction="right"
+            amount={0.25}
+            delay={0.1}
+          >
+            <div className="parentLensFeatureVisuals">
+              <figure>
+                <div className="parentLensImageFrame parentLensFeatureImageFrame">
+                  <Image
+                    src="/images/parentlensai/parentlensai-chat.png"
+                    alt="ParentLensAI companion answering questions using family records"
+                    fill
+                    sizes="(max-width: 950px) 92vw, 48vw"
+                    className="parentLensImage parentLensImageContain"
+                  />
                 </div>
-              </article>
-            ))}
-          </div>
 
-          <div className="parentLensFeatureVisuals">
-            <figure>
-              <div className="parentLensImageFrame parentLensFeatureImageFrame">
-                <Image
-                  src="/images/parentlensai/parentlensai-chat.png"
-                  alt="ParentLensAI companion answering questions using family records"
-                  fill
-                  sizes="(max-width: 950px) 92vw, 48vw"
-                  className="parentLensImage parentLensImageContain"
-                />
-              </div>
+                <figcaption className="parentLensCaption parentLensCaptionLight">
+                  The AI companion retrieves relevant documents, notes, tasks,
+                  trends, and conversation context before generating a response.
+                </figcaption>
+              </figure>
+            </div>
+          </Reveal>
 
-              <figcaption className="parentLensCaption parentLensCaptionLight">
-                The AI companion retrieves relevant documents, notes, tasks,
-                trends, and conversation context before generating a response.
-              </figcaption>
-            </figure>
-          </div>
         </div>
       </section>
 
       {/* HOW IT WORKS */}
       <section className="parentLensDarkSection">
-        <div className="parentLensSectionHeading">
-          <p className="parentLensSectionLabel">How it works</p>
+        <Reveal amount={0.3}>
+          <div className="parentLensSectionHeading">
+            <p className="parentLensSectionLabel">How it works</p>
 
-          <h2>
-            A local-first retrieval and reasoning pipeline
-          </h2>
+            <h2>
+              A local-first retrieval and reasoning pipeline
+            </h2>
 
-          <p>
-            The system transforms family records into searchable information,
-            retrieves the most relevant evidence for each question, and passes
-            that evidence to the selected language model.
-          </p>
-        </div>
+            <p>
+              The system transforms family records into searchable information,
+              retrieves the most relevant evidence for each question, and passes
+              that evidence to the selected language model.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="parentLensArchitecture">
-          <div className="parentLensImageFrame parentLensArchitectureFrame">
-            <Image
-              src="/images/parentlensai/parentlensai-architecture.png"
-              alt="ParentLensAI document retrieval and question-answering architecture"
-              fill
-              sizes="(max-width: 950px) 92vw, 53vw"
-              className="parentLensImage parentLensImageContain"
-            />
-          </div>
+          <Reveal direction="left" amount={0.25}>
+            <div className="parentLensImageFrame parentLensArchitectureFrame">
+              <Image
+                src="/images/parentlensai/parentlensai-architecture.png"
+                alt="ParentLensAI document retrieval and question-answering architecture"
+                fill
+                sizes="(max-width: 950px) 92vw, 53vw"
+                className="parentLensImage parentLensImageContain"
+              />
+            </div>
+          </Reveal>
 
-          <div className="parentLensArchitectureSteps">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Ingest records</h3>
-                <p>
-                  PDF, DOCX, TXT, and Markdown documents are uploaded, parsed,
-                  divided into overlapping text chunks, and checked for
-                  duplicates.
-                </p>
-              </div>
-            </article>
+          <Reveal
+            className="parentLensArchitectureSteps"
+            direction="right"
+            amount={0.2}
+            delay={0.08}
+          >
+            <div className="parentLensArchitectureSteps">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Ingest records</h3>
+                  <p>
+                    PDF, DOCX, TXT, and Markdown documents are uploaded, parsed,
+                    divided into overlapping text chunks, and checked for
+                    duplicates.
+                  </p>
+                </div>
+              </article>
 
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Create searchable representations</h3>
-                <p>
-                  A local sentence-transformer model converts each chunk into
-                  an embedding stored in a persistent ChromaDB collection.
-                </p>
-              </div>
-            </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Create searchable representations</h3>
+                  <p>
+                    A local sentence-transformer model converts each chunk into
+                    an embedding stored in a persistent ChromaDB collection.
+                  </p>
+                </div>
+              </article>
 
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Retrieve relevant context</h3>
-                <p>
-                  Each question is compared with indexed documents, notes, and
-                  tasks to identify the most relevant supporting information.
-                </p>
-              </div>
-            </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Retrieve relevant context</h3>
+                  <p>
+                    Each question is compared with indexed documents, notes, and
+                    tasks to identify the most relevant supporting information.
+                  </p>
+                </div>
+              </article>
 
-            <article>
-              <span>04</span>
-              <div>
-                <h3>Generate a grounded response</h3>
-                <p>
-                  The retrieved context and recent conversation history are
-                  organized into a protected prompt and sent to either a local
-                  Ollama model or an optional OpenAI model.
-                </p>
-              </div>
-            </article>
-          </div>
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Generate a grounded response</h3>
+                  <p>
+                    The retrieved context and recent conversation history are
+                    organized into a protected prompt and sent to either a local
+                    Ollama model or an optional OpenAI model.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </Reveal>
         </div>
 
         <div className="parentLensAtGlance">
@@ -354,40 +393,53 @@ export default function ParentLensAIPage() {
       </section>
 
       <section className="parentLensPresentationSection">
-        <div className="parentLensPresentationVisual">
-          <div className="parentLensImageFrame parentLensPresentationFrame">
-            <Image
-              src="/images/projects/parentlensai.png"
-              alt="Brady presenting the ParentLensAI system architecture"
-              fill
-              sizes="(max-width: 950px) 92vw, 52vw"
-              className="parentLensImage"
-            />
+        <Reveal
+          className="parentLensPresentationVisual"
+          direction="left"
+          amount={0.25}
+        >      
+          <div className="parentLensPresentationVisual">
+            <div className="parentLensImageFrame parentLensPresentationFrame">
+              <Image
+                src="/images/projects/parentlensai.png"
+                alt="Brady presenting the ParentLensAI system architecture"
+                fill
+                sizes="(max-width: 950px) 92vw, 52vw"
+                className="parentLensImage"
+              />
+            </div>
           </div>
-        </div>
+        </Reveal>  
 
-        <div className="parentLensPresentationContent">
-          <p className="parentLensSectionLabel">Communicating the system</p>
+        <Reveal
+          className="parentLensPresentationContent"
+          direction="right"
+          amount={0.25}
+          delay={0.08}
+        >
+          <div className="parentLensPresentationContent">
+            <p className="parentLensSectionLabel">Communicating the system</p>
 
-          <h2>
-            Building the platform also meant learning to explain how its parts work
-            together.
-          </h2>
+            <h2>
+              Building the platform also meant learning to explain how its parts work
+              together.
+            </h2>
 
-          <p>
-            I presented ParentLensAI as an end-to-end system rather than simply an AI
-            chatbot. The architecture connects document processing, vector retrieval,
-            structured records, local and cloud language models, dashboards, and
-            privacy-conscious data handling.
-          </p>
+            <p>
+              I presented ParentLensAI as an end-to-end system rather than simply an AI
+              chatbot. The architecture connects document processing, vector retrieval,
+              structured records, local and cloud language models, dashboards, and
+              privacy-conscious data handling.
+            </p>
 
-          <p>
-            Explaining the architecture helped me evaluate the platform from both a
-            technical and user perspective: what information enters the system, how
-            it is retrieved, what the model receives, and where human judgment still
-            matters.
-          </p>
-        </div>
+            <p>
+              Explaining the architecture helped me evaluate the platform from both a
+              technical and user perspective: what information enters the system, how
+              it is retrieved, what the model receives, and where human judgment still
+              matters.
+            </p>
+          </div>
+        </Reveal>
       </section>
 
 

@@ -3597,7 +3597,7 @@ p {
   letter-spacing: -0.04em;
 }
 
-.snapshotHeader > p:not(.eyebrow) {
+.snapshotHeader > p:not(.eyebrow):not(.snapshotSchoolLine) {
   max-width: 720px;
   margin: 22px 0 0;
   font-size: 1.05rem;
@@ -3986,4 +3986,14 @@ button,
 .siteBuildNote a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.snapshotSchoolLine {
+  margin: 22px 0 14px;
+  color: var(--accent);
+  font-family: var(--font-newsreader), serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.15rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }

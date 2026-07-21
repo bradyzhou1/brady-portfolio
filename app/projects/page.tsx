@@ -133,6 +133,11 @@ export default function ProjectsPage() {
         <div className="projectsHeroGlow projectsHeroGlowTwo" />
 
         <div className="projectsHeroContent">
+
+          <a className="parentLensBackLink" href="/#projects">
+            ← Back to portfolio
+          </a>
+          
           <p className="projectsPageEyebrow">Selected Work</p>
 
           <h1>

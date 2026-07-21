@@ -118,7 +118,8 @@ export default function Home() {
 
             <div className="aboutStory">
               <p>
-                I am a student researcher, developer, violinist, and student leader interested 
+                I am a student researcher, developer, 
+                violinist, and student leader interested 
                 in how computer science can help us better understand people and respond to real needs.
               </p>
 
@@ -171,10 +172,18 @@ export default function Home() {
               Preparation across academics, computing, research, and engineering
             </h2>
 
-            <p>
+            <p className="snapshotSchoolLine">
+              Walton High School
+              <br />
+              STEM Academy
+              <br />
+              Advanced Math and Science (AMS) Pathway
+            </p>
+
+            {/* <p>
               A concise view of my academic foundation, technical experience, and
               continuing growth as a student researcher and developer.
-            </p>
+            </p> */}
           </div>
         </Reveal>  
 
@@ -559,10 +568,10 @@ export default function Home() {
                 <span>01</span>
 
                 <div>
-                  <h3>Georgia All-State & Chamber Orchestra</h3>
+                  <h3>Georgia All-State Full Orchestra & Walton Chamber</h3>
                   <p>
                     Selected for Georgia GMEA All-State Orchestra across middle and
-                    high school and served as Principal Second Violin in Walton High
+                    high school. Served as Principal Second Violin in Walton High
                     School Chamber Orchestra.
                   </p>
                 </div>

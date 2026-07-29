@@ -641,17 +641,19 @@ export default function Home() {
         <div className="leadershipExperienceList">
           <article className="leadershipFeaturedRole">
             <span>01</span>
-
             <div>
-              <p className="leadershipOrganization">First Step Team</p>
-              <h3>Co-President</h3>
+              <p className="leadershipOrganization">
+                Walton High School 
+              </p>
+              <h3>STEM AMS Student Representative</h3>
+              <p><strong>2023 - Present</strong></p>
 
               <p>
-                Previously President-elect and VP of Outreach for a student-run
-                nonprofit with more than 200 members. I initiated a long-term
-                partnership with the Chattahoochee Nature Center, expanded local food
-                bank partnerships, and helped organize environmental restoration,
-                food distribution, fundraising, and community-service events.
+                A prestigae, appointed four-year role as the sole Student Representative 
+                for STEM Academy, Advanced Math and Science Pathway, Class of 2027,
+                supporting academy initiatives, student events,
+                partnerships, and communication between students and program
+                leadership.
               </p>
             </div>
           </article>
@@ -661,14 +663,32 @@ export default function Home() {
 
             <div>
               <p className="leadershipOrganization">
-                Walton STEM Academy · Advanced Math and Science Pathway
+                <a
+                  href="https://www.firststepteam.org/members-leadership/leadership-team"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="leadershipOrganizationLink"
+                >
+                  <span>First Step Team</span>
+                  <span className="externalLinkIcon" aria-hidden="true">
+                    ↗
+                  </span>
+                </a>
               </p>
-              <h3>Class of 2027 Student Representative</h3>
+
+              <h3>Co-President</h3>
 
               <p>
-                A four-year role supporting academy initiatives, student events,
-                partnerships, and communication between students and program
-                leadership.
+                <strong>2026 - Present</strong>
+              </p>
+
+              <p>
+                Previously President-elect (2025-2026) and VP of Outreach
+                (2023-2025) for a student-run nonprofit with more than 200 members.
+                I initiated a long-term partnership with the Chattahoochee Nature
+                Center, expanded local food bank partnerships, and helped organize
+                environmental restoration, food distribution, fundraising, and
+                community-service events.
               </p>
             </div>
           </article>
@@ -681,7 +701,7 @@ export default function Home() {
                 Mockingbird Melody Georgia Chapter
               </p>
               <h3>Founding Member & Treasurer</h3>
-
+              <p><strong>2025 - Present</strong></p>
               <p>
                 Recruited student musicians, helped coordinate performances, and
                 expanded access to live music for senior communities.
@@ -697,7 +717,7 @@ export default function Home() {
                 Walton Student Government Association
               </p>
               <h3>Treasurer</h3>
-
+              <p><strong>2023 - 2024</strong></p>
               <p>
                 Managed budgets, tracked expenditures, prepared reports, and
                 supported fundraising and major school events.
@@ -713,7 +733,7 @@ export default function Home() {
                 Expect Respect Anti-Bullying Advisory Council
               </p>
               <h3>Student Representative</h3>
-
+              <p><strong>2023 - Present</strong></p>
               <p>
                 Contributed a student perspective to district-wide efforts focused on
                 safer and more respectful school communities.

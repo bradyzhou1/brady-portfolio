@@ -295,7 +295,8 @@ export default function ProjectsPage() {
               </div>
 
               <figcaption>
-                Microplastics water mapping team on Lake Lanier.
+                <strong>Brady Zhou (far left)</strong> with teammates during microplastics 
+                water mapping fieldwork on Lake Lanier.
               </figcaption>
             </figure>
           </Reveal>

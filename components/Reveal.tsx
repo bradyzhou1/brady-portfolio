@@ -1,14 +1,14 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "framer-motion";
+import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
-  direction?: "up" | "left" | "right";
-  amount?: number;
+  direction?: "up" | "down" | "left" | "right";
 };
 
 export default function Reveal({
@@ -16,14 +16,31 @@ export default function Reveal({
   className,
   delay = 0,
   direction = "up",
-  amount = 0.18,
 }: RevealProps) {
   const prefersReducedMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    const updateIsMobile = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    updateIsMobile();
+
+    mediaQuery.addEventListener("change", updateIsMobile);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateIsMobile);
+    };
+  }, []);
 
   const offset = {
-    up: { x: 0, y: 34 },
-    left: { x: -34, y: 0 },
-    right: { x: 34, y: 0 },
+    up: { x: 0, y: 28 },
+    down: { x: 0, y: -28 },
+    left: { x: 28, y: 0 },
+    right: { x: -28, y: 0 },
   }[direction];
 
   return (
@@ -45,13 +62,17 @@ export default function Reveal({
       }}
       viewport={{
         once: false,
-        amount: 0.35,
+        amount: isMobile ? 0.18 : 0.35,
       }}
-      transition={{
-        duration: 0.65,
-        delay,
-        ease: [0.22, 1, 0.36, 1],
-      }}
+      transition={
+        prefersReducedMotion
+          ? { duration: 0 }
+          : {
+              duration: isMobile ? 0.5 : 0.65,
+              delay: isMobile ? delay * 0.5 : delay,
+              ease: [0.22, 1, 0.36, 1],
+            }
+      }
     >
       {children}
     </motion.div>

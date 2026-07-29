@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* ABOUT */}
       <section id="about" className="contentSection aboutSection">
-        <Reveal direction="left">
+        <Reveal direction="left" amount={0.25}>
           <div className="aboutVisuals">
             <div className="aboutPhoto aboutPhotoPrimary">
               <Image

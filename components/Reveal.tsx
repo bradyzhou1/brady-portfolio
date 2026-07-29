@@ -9,6 +9,7 @@ type RevealProps = {
   className?: string;
   delay?: number;
   direction?: "up" | "down" | "left" | "right";
+  amount?: number;
 };
 
 export default function Reveal({
@@ -16,6 +17,7 @@ export default function Reveal({
   className,
   delay = 0,
   direction = "up",
+  amount = 0.2,
 }: RevealProps) {
   const prefersReducedMotion = useReducedMotion();
   const [isMobile, setIsMobile] = useState(false);

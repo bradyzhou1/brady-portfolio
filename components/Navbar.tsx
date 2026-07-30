@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 const navItems = [
   { label: "About Me", href: "/#about" },
   { label: "Academics", href: "/#academic-technical" },
-  { label: "ISEF/STS Research", href: "/#research" },
-  { label: "ParentLensAI", href: "/#parentlensai" },
-  { label: "Other Projects", href: "/#projects" },
+  { label: "ISEF/STS Research", href: "/research" },
+  { label: "ParentLensAI", href: "/parentlensai" },
+  { label: "Featured Projects", href: "/projects" },
   { label: "Music", href: "/#music" },
   { label: "Leadership", href: "/#leadership" },
 ];

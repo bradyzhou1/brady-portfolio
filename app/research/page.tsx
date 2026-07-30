@@ -161,7 +161,7 @@ export default function ResearchPage() {
 
       {/* WHY */}
       <section className="researchLightSection">
-        <Reveal delay={0.1}>
+        <Reveal delay={0}>
           <div className="researchTwoColumn">
             <div>
               <p className="researchSectionLabel">Why I did this</p>
@@ -192,7 +192,7 @@ export default function ResearchPage() {
 
       {/* WHAT I DID */}
       <section className="researchDarkSection">
-        <Reveal delay={0.1}>
+        <Reveal delay={0}>
           <div className="researchSectionHeading">
             <p className="researchSectionLabel">What I did</p>
 
@@ -207,7 +207,7 @@ export default function ResearchPage() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>        
+        <Reveal delay={0}>        
           <div className="researchMethodLayout">
             <div className="researchImageFrame researchPipelineFrame">
               <Image
@@ -220,7 +220,7 @@ export default function ResearchPage() {
             </div>
 
             <div className="researchMethodSteps">
-              <Reveal delay={0.2}>
+              <Reveal delay={0.05}>
                 <article>
                   <span>01</span>
                   <div>
@@ -233,7 +233,7 @@ export default function ResearchPage() {
                 </article>
               </Reveal>
 
-              <Reveal delay={0.4}>
+              <Reveal delay={0.1}>
                 <article>
                   <span>02</span>
                   <div>
@@ -246,7 +246,7 @@ export default function ResearchPage() {
                 </article>
               </Reveal>
 
-              <Reveal delay={0.6}>
+              <Reveal delay={0.15}>
                 <article>
                   <span>03</span>
                   <div>
@@ -259,7 +259,7 @@ export default function ResearchPage() {
                 </article>
               </Reveal>
 
-              <Reveal delay={0.8}>
+              <Reveal delay={0.2}>
                 <article>
                   <span>04</span>
                   <div>
@@ -318,7 +318,7 @@ export default function ResearchPage() {
 
         <div className="researchFindingsLayout">
           <div className="researchFindingText">
-            <Reveal delay={0.2}>
+            <Reveal delay={0.05}>
               <article>
                 <span>01</span>
                 <div>
@@ -332,7 +332,7 @@ export default function ResearchPage() {
               </article>
             </Reveal>
 
-            <Reveal delay={0.4}>
+            <Reveal delay={0.1}>
               <article>
                 <span>02</span>
                 <div>
@@ -346,7 +346,7 @@ export default function ResearchPage() {
               </article>
             </Reveal>
 
-            <Reveal delay={0.6}>
+            <Reveal delay={0.15}>
               <article>
                 <span>03</span>
                 <div>
@@ -360,7 +360,7 @@ export default function ResearchPage() {
               </article>
             </Reveal>
 
-            <Reveal delay={0.8}>
+            <Reveal delay={0.2}>
               <article>
                 <span>04</span>
                 <div>

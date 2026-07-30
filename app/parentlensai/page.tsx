@@ -257,7 +257,7 @@ export default function ParentLensAIPage() {
             className="parentLensFeatureVisuals"
             direction="right"
             amount={0.25}
-            delay={0.1}
+            delay={0.08}
           >
             <div className="parentLensFeatureVisuals">
               <figure>

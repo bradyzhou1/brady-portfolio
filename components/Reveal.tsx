@@ -64,7 +64,7 @@ export default function Reveal({
       }}
       viewport={{
         once: false,
-        amount: isMobile ? 0.18 : 0.35,
+        amount: isMobile ? 0.18 : 0.3,
       }}
       transition={
         prefersReducedMotion

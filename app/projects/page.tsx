@@ -189,7 +189,8 @@ export default function ProjectsPage() {
         {projects.map((project, index) => (
           <Reveal 
             key={project.title}
-            delay={index * 0.5}
+            // delay={index * 0.5}
+            delay={0}
             direction={index % 2 === 0 ? "left" : "right"}
           >
             <article
@@ -279,7 +280,7 @@ export default function ProjectsPage() {
         </div>
 
         <div className="additionalProjectsLayout">
-          <Reveal delay={0.5}
+          <Reveal delay={0}
             direction="left"
             className="additionalProjectsVisualReveal"
             >
@@ -304,7 +305,7 @@ export default function ProjectsPage() {
             {additionalProjects.map((project, index) => (
               <Reveal
                 key={project.title}
-                delay={index * 0.5}
+                delay={index * 0.1}
                 direction="right"
               >
                 <article className="additionalProjectRow">

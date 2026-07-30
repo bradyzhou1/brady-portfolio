@@ -161,7 +161,7 @@ export default function ResearchPage() {
 
       {/* WHY */}
       <section className="researchLightSection">
-        <Reveal delay={0}>
+        <Reveal delay={0.1}>
           <div className="researchTwoColumn">
             <div>
               <p className="researchSectionLabel">Why I did this</p>

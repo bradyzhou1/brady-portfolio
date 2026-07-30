@@ -92,6 +92,18 @@ const projects: Project[] = [
 ];
 
 const additionalProjects: AdditionalProject[] = [
+
+  {
+    category: "Georgia Tech Aerospace Engineering Internship",
+    title: "Lunar Rover Engineering",
+    description:
+      "Collaborated on the design, programming, testing, and refinement of a rover for a simulated lunar environment.",
+    link: {
+      label: "Watch Project Video",
+      href: "https://www.youtube.com/watch?v=8WuslV10caI",
+    },
+  },
+
   {
     category: "Environmental Research · Community Science",
     title: "Microplastics Mapping in the Chattahoochee River",
@@ -107,16 +119,6 @@ const additionalProjects: AdditionalProject[] = [
     title: "MathWorks Math Modeling Challenge",
     description:
       "Collaborated with a five-student team to develop and communicate a mathematical model during a continuous 14-hour competition.",
-  },
-  {
-    category: "Aerospace Engineering · Programming",
-    title: "Lunar Rover Engineering",
-    description:
-      "Collaborated on the design, programming, testing, and refinement of a rover for a simulated lunar environment.",
-    link: {
-      label: "Watch Project Video",
-      href: "https://www.youtube.com/watch?v=8WuslV10caI",
-    },
   },
 ];
 
@@ -302,42 +304,68 @@ export default function ProjectsPage() {
             </figure>
           </Reveal>
           <div className="additionalProjectsList">
+
             {additionalProjects.map((project, index) => (
               <Reveal
                 key={project.title}
                 delay={index * 0.1}
                 direction="right"
               >
-                <article className="additionalProjectRow">
-                <div className="additionalProjectIcon" aria-hidden="true">
-                  <span />
-                </div>
-
-                <div className="additionalProjectRowContent">
-                  <p className="additionalProjectCategory">
-                    {project.category}
-                  </p>
-
-                  <h3>{project.title}</h3>
-
-                  <p className="additionalProjectDescription">
-                    {project.description}
-                  </p>
-                </div>
-
-                {project.link && (
+                {project.link ? (
                   <a
                     href={project.link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="additionalProjectRowLink"
+                    className="additionalProjectRow additionalProjectRowClickable"
+                    aria-label={`${project.title}: ${project.link.label}`}
                   >
-                    {project.link.label} ↗
+                    <div className="additionalProjectIcon" aria-hidden="true">
+                      <span />
+                    </div>
+
+                    <div className="additionalProjectRowContent">
+                      <p className="additionalProjectCategory">
+                        {project.category}
+                      </p>
+
+                      <h3>{project.title}</h3>
+
+                      <p className="additionalProjectDescription">
+                        {project.description}
+                      </p>
+                    </div>
+
+                    <span
+                      className="additionalProjectRowLink"
+                      aria-hidden="true"
+                    >
+                      {project.link.label} ↗
+                    </span>
                   </a>
+                ) : (
+                  <article className="additionalProjectRow">
+                    <div className="additionalProjectIcon" aria-hidden="true">
+                      <span />
+                    </div>
+
+                    <div className="additionalProjectRowContent">
+                      <p className="additionalProjectCategory">
+                        {project.category}
+                      </p>
+
+                      <h3>{project.title}</h3>
+
+                      <p className="additionalProjectDescription">
+                        {project.description}
+                      </p>
+                    </div>
+                  </article>
                 )}
-              </article>
-            </Reveal>
+              </Reveal>
             ))}
+
+
+
           </div>
         </div>
       </section>

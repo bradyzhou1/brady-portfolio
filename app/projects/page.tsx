@@ -97,7 +97,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Georgia Tech Aerospace Engineering Internship",
     title: "Lunar Rover Engineering",
     description:
-      "Collaborated on the design, programming, testing, and refinement of a rover for a simulated lunar environment.",
+      "My team of 6 was assigned to create a prototype for a rover to land on a moon or planet. We chose the Moon and decided on creating a rover to map Helium-3 concentrations on the Moon. Our rover included several sensors that detected proxies for He-3 as well as a scoop to collect samples in areas of interest. Our rover was successful in driving and collecting, and was powered by Arduino circuits for our \"sensors\", our driving circuit, and our scoop.",
     link: {
       label: "Watch Project Video",
       href: "https://www.youtube.com/watch?v=8WuslV10caI",
@@ -118,7 +118,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Applied Mathematics · Data Science",
     title: "MathWorks Math Modeling Challenge",
     description:
-      "Collaborated with a five-student team to develop and communicate a mathematical model during a continuous 14-hour competition.",
+      "Our team of 5 was assigned a challenge to predict the sports betting odds of someone given their demographic. It was a 14-hour modeling challenge where we wrote a paper discussing our findings. While we didn't progress to the next round, I still learned a lot about data modeling, running simulations, and reporting out team's findings.",
   },
 ];
 

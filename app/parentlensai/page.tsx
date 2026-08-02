@@ -72,7 +72,7 @@ export default function ParentLensAIPage() {
 
           <div className="parentLensHeroActions">
             <a
-              href="REPLACE_WITH_PARENTLENSAI_GITHUB_URL"
+              href="https://github.com/bradyzhou1/ParentLensAI"
               target="_blank"
               rel="noreferrer"
               className="parentLensPrimaryButton"
@@ -564,7 +564,7 @@ export default function ParentLensAIPage() {
 
         <div className="parentLensExploreCards">
           <a
-            href="REPLACE_WITH_PARENTLENSAI_GITHUB_URL"
+            href="https://github.com/bradyzhou1/ParentLensAI"
             target="_blank"
             rel="noreferrer"
           >

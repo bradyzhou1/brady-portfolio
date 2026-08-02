@@ -546,78 +546,108 @@ export default function Home() {
             </p>
           </div>
 
-          {/* RIGHT SIDE: VIDEO + SELECTED ACTIVITIES */}
+          {/* RIGHT SIDE: PERFORMANCES */}
           <div className="musicRightColumn">
             <div className="musicMedia">
               <div className="musicVideoFrame">
                 <iframe
                   src="https://www.youtube.com/embed/F3n6xjZCq8Q"
-                  title="Brady Zhou violin performance"
+                  title="Brady Zhou December 2025 violin solo"
+                  loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
               </div>
 
-              <p className="musicVideoCaption">
-                2025 violin solo
-              </p>
+              <p className="musicVideoCaption">December 2025 violin solo</p>
             </div>
 
-            <div className="musicActivities">
-              <article>
-                <span>01</span>
+            <div className="musicMedia">
+              <div className="musicVideoFrame">
+                <iframe
+                  src="https://www.youtube.com/embed/6pqC3Cro-cY"
+                  title="Brady Zhou August 2026 violin solo"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
 
-                <div>
-                  <h3>Georgia All-State Full Orchestra & Walton Chamber</h3>
-                  <p>
-                    Selected for Georgia GMEA All-State Orchestra across middle and
-                    high school. Served as Principal Second Violin in Walton High
-                    School Chamber Orchestra.
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <span>02</span>
-
-                <div>
-                  <h3>Youth Orchestra Recognition</h3>
-                  <p>
-                    Accepted to Emory Youth Symphony Orchestra and Georgia Youth
-                    Symphony Orchestra.
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <span>03</span>
-
-                <div>
-                  <h3>Composition & Early Music</h3>
-                  <p>
-                    Two-time East Cobb Council finalist in National PTA Reflections
-                    for original string-quartet compositions, with additional
-                    experience in chamber music and viola da gamba.
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <span>04</span>
-
-                <div>
-                  <h3>Community Performance</h3>
-                  <p>
-                    Founding member, treasurer, and volunteer violinist with
-                    Mockingbird Melody, performing for senior communities, special
-                    needs children, and community service events.
-                  </p>
-                </div>
-              </article>
+              <p className="musicVideoCaption">August 2026 violin solo</p>
             </div>
           </div>
         </div>
+
+        {/* FULL-WIDTH ACTIVITY CARDS */}
+        <div className="musicActivitiesSection">
+          <div className="musicActivitiesHeader">
+            <p className="eyebrow">Selected Experiences</p>
+            <h3>Performance, composition, and community impact</h3>
+          </div>
+
+          <div className="musicActivities">
+            <article className="musicActivityCard">
+              {/* <span className="musicActivityNumber" aria-hidden="true">
+                01
+              </span> */}
+
+              <div>
+                <h4>Georgia All-State & Walton Chamber</h4>
+                <p>
+                  Selected for Georgia <strong>GMEA All-State</strong> Orchestra throughout middle and
+                  high school and served as <strong>Principal Second Violin</strong> in Walton High
+                  School Chamber Orchestra.
+                </p>
+              </div>
+            </article>
+
+            <article className="musicActivityCard">
+              {/* <span className="musicActivityNumber" aria-hidden="true">
+                02
+              </span> */}
+
+              <div>
+                <h4>Youth Orchestra Recognition</h4>
+                <p>
+                  Accepted to the Emory Youth Symphony Orchestra and Georgia Youth
+                  Symphony Orchestra.
+                </p>
+              </div>
+            </article>
+
+            <article className="musicActivityCard">
+              {/* <span className="musicActivityNumber" aria-hidden="true">
+                03
+              </span> */}
+
+              <div>
+                <h4>Composition & Early Music</h4>
+                <p>
+                  Two-time East Cobb Council finalist in National PTA Reflections for
+                  original string-quartet compositions, with additional experience in
+                  chamber music and viola da gamba.
+                </p>
+              </div>
+            </article>
+
+            <article className="musicActivityCard">
+              {/* <span className="musicActivityNumber" aria-hidden="true">
+                04
+              </span> */}
+
+              <div>
+                <h4>Community Performance</h4>
+                <p>
+                  Founding member, treasurer, and volunteer violinist with Mockingbird
+                  Melody, performing for senior communities, children with special
+                  needs, and community service events.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
+
 
       {/* LEADERSHIP */}
       <section

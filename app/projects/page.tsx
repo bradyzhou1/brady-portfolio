@@ -85,7 +85,7 @@ const projects: Project[] = [
       },
       {
         label: "GitHub",
-        href: "REPLACE_WITH_PARENTLENSAI_GITHUB_URL",
+        href: "https://github.com/bradyzhou1/ParentLensAI",
       },
     ],
   },
@@ -97,7 +97,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Georgia Tech Aerospace Engineering Internship",
     title: "Lunar Rover Engineering",
     description:
-      "My team of 6 was assigned to create a prototype for a rover to land on a moon or planet. We chose the Moon and decided on creating a rover to map Helium-3 concentrations on the Moon. Our rover included several sensors that detected proxies for He-3 as well as a scoop to collect samples in areas of interest. Our rover was successful in driving and collecting, and was powered by Arduino circuits for our \"sensors\", our driving circuit, and our scoop.",
+      "My six-person team was tasked with designing and building a prototype rover for exploration on the Moon or another planet. We chose the Moon and developed a rover intended to map areas with potential Helium-3 concentrations. The rover used several sensors to detect indicators associated with Helium-3 and included a scoop mechanism for collecting samples from promising locations. Powered by Arduino-based circuits, the rover successfully navigated the test environment, operated its sensors, and collected samples using the scoop.",
     link: {
       label: "Watch Project Video",
       href: "https://www.youtube.com/watch?v=8WuslV10caI",
@@ -118,7 +118,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Applied Mathematics · Data Science",
     title: "MathWorks Math Modeling Challenge",
     description:
-      "Our team of 5 was assigned a challenge to predict the sports betting odds of someone given their demographic. It was a 14-hour modeling challenge where we wrote a paper discussing our findings. While we didn't progress to the next round, I still learned a lot about data modeling, running simulations, and reporting out team's findings.",
+      "My five-person team participated in a 14-hour mathematical modeling challenge focused on predicting sports-betting behavior based on demographic data. We developed a model, ran simulations, analyzed the results, and wrote a paper explaining our methodology and findings. Although we did not advance to the next round, the experience strengthened my skills in data modeling, simulation, collaborative problem-solving, and communicating technical results.",
   },
 ];
 

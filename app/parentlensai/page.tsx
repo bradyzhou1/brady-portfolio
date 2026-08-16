@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import CountUp from "@/components/CountUp";
@@ -41,7 +44,67 @@ const technologies = [
   "Altair",
 ];
 
+type ImageLightboxProps = {
+  src: string;
+  alt: string;
+  onClose: () => void;
+};
+
+function ImageLightbox({ src, alt, onClose }: ImageLightboxProps) {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      className="parentLensLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Expanded ParentLensAI screenshot"
+      onClick={onClose}
+    >
+      <button
+        type="button"
+        className="parentLensLightboxClose"
+        onClick={onClose}
+        aria-label="Close expanded image"
+      >
+        ×
+      </button>
+
+      <div
+        className="parentLensLightboxContent"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="100vw"
+          className="parentLensLightboxImage"
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function ParentLensAIPage() {
+  const [lightboxImage, setLightboxImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
   return (
     <main className="parentLensPage">
       {/* HERO */}
@@ -99,16 +162,28 @@ export default function ParentLensAIPage() {
               className="parentLensLogo"
             />
           </div>
-          <div className="parentLensImageFrame parentLensHeroImageFrame">
-            <Image
-              src="/images/parentlensai/parentlensai-dashboard.png"
-              alt="ParentLensAI dashboard showing child information, tasks, notes, and trends"
-              fill
-              priority
-              sizes="(max-width: 950px) 92vw, 44vw"
-              className="parentLensImage parentLensImageContain"
-            />
-          </div>
+          <button
+            type="button"
+            className="parentLensImageButton"
+            onClick={() =>
+              setLightboxImage({
+                src: "/images/parentlensai/parentlensai-dashboard1.png",
+                alt: "ParentLensAI dashboard showing child information, tasks, notes, and trends",
+              })
+            }
+            aria-label="Expand ParentLensAI dashboard screenshot"
+          >
+            <div className="parentLensImageFrame parentLensHeroImageFrame">
+              <Image
+                src="/images/parentlensai/parentlensai-dashboard1.png"
+                alt="ParentLensAI dashboard showing child information, tasks, notes, and trends"
+                fill
+                priority
+                sizes="(max-width: 950px) 92vw, 44vw"
+                className="parentLensImage parentLensImageContain"
+              />
+            </div>
+          </button>
 
           <p className="parentLensCaption">
             One dashboard connects records, questions, tasks, observations, and
@@ -261,15 +336,27 @@ export default function ParentLensAIPage() {
           >
             <div className="parentLensFeatureVisuals">
               <figure>
-                <div className="parentLensImageFrame parentLensFeatureImageFrame">
-                  <Image
-                    src="/images/parentlensai/parentlensai-chat.png"
-                    alt="ParentLensAI companion answering questions using family records"
-                    fill
-                    sizes="(max-width: 950px) 92vw, 48vw"
-                    className="parentLensImage parentLensImageContain"
-                  />
-                </div>
+                <button
+                  type="button"
+                  className="parentLensImageButton"
+                  onClick={() =>
+                    setLightboxImage({
+                      src: "/images/parentlensai/parentlensai-chat1.png",
+                      alt: "ParentLensAI companion answering questions using family records",
+                    })
+                  }
+                  aria-label="Expand ParentLensAI AI companion screenshot"
+                >
+                  <div className="parentLensImageFrame parentLensFeatureImageFrame">
+                    <Image
+                      src="/images/parentlensai/parentlensai-chat1.png"
+                      alt="ParentLensAI companion answering questions using family records"
+                      fill
+                      sizes="(max-width: 950px) 92vw, 48vw"
+                      className="parentLensImage parentLensImageContain"
+                    />
+                  </div>
+                </button>
 
                 <figcaption className="parentLensCaption parentLensCaptionLight">
                   The AI companion retrieves relevant documents, notes, tasks,
@@ -302,15 +389,27 @@ export default function ParentLensAIPage() {
 
         <div className="parentLensArchitecture">
           <Reveal direction="left" amount={0.25}>
-            <div className="parentLensImageFrame parentLensArchitectureFrame">
-              <Image
-                src="/images/parentlensai/parentlensai-architecture.png"
-                alt="ParentLensAI document retrieval and question-answering architecture"
-                fill
-                sizes="(max-width: 950px) 92vw, 53vw"
-                className="parentLensImage parentLensImageContain"
-              />
-            </div>
+            <button
+              type="button"
+              className="parentLensImageButton"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/parentlensai/parentlensai-architecture.png",
+                  alt: "ParentLensAI document retrieval and question-answering architecture",
+                })
+              }
+              aria-label="Expand ParentLensAI architecture diagram"
+            >
+              <div className="parentLensImageFrame parentLensArchitectureFrame">
+                <Image
+                  src="/images/parentlensai/parentlensai-architecture.png"
+                  alt="ParentLensAI document retrieval and question-answering architecture"
+                  fill
+                  sizes="(max-width: 950px) 92vw, 53vw"
+                  className="parentLensImage parentLensImageContain"
+                />
+              </div>
+            </button>
           </Reveal>
 
           <Reveal
@@ -455,15 +554,27 @@ export default function ParentLensAIPage() {
 
         <div className="parentLensScreenshotGrid">
           <figure>
-            <div className="parentLensImageFrame parentLensScreenshotFrame">
-              <Image
-                src="/images/parentlensai/parentlensai-upload.png"
-                alt="ParentLensAI document upload and record management page"
-                fill
-                sizes="(max-width: 950px) 92vw, 46vw"
-                className="parentLensImage parentLensImageContain"
-              />
-            </div>
+            <button
+              type="button"
+              className="parentLensImageButton"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/parentlensai/parentlensai-upload1.png",
+                  alt: "ParentLensAI document upload and record management page",
+                })
+              }
+              aria-label="Expand ParentLensAI document intelligence screenshot"
+            >
+              <div className="parentLensImageFrame parentLensScreenshotFrame">
+                <Image
+                  src="/images/parentlensai/parentlensai-upload1.png"
+                  alt="ParentLensAI document upload and record management page"
+                  fill
+                  sizes="(max-width: 950px) 92vw, 46vw"
+                  className="parentLensImage parentLensImageContain"
+                />
+              </div>
+            </button>
 
             <figcaption>
               <strong>Document intelligence</strong>
@@ -474,15 +585,27 @@ export default function ParentLensAIPage() {
           </figure>
 
           <figure>
-            <div className="parentLensImageFrame parentLensScreenshotFrame">
-              <Image
-                src="/images/parentlensai/parentlensai-trends.png"
-                alt="ParentLensAI medication and academic trend visualization"
-                fill
-                sizes="(max-width: 950px) 92vw, 46vw"
-                className="parentLensImage parentLensImageContain"
-              />
-            </div>
+            <button
+              type="button"
+              className="parentLensImageButton"
+              onClick={() =>
+                setLightboxImage({
+                  src: "/images/parentlensai/parentlensai-trends1.png",
+                  alt: "ParentLensAI medication and academic trend visualization",
+                })
+              }
+              aria-label="Expand ParentLensAI longitudinal trends screenshot"
+            >
+              <div className="parentLensImageFrame parentLensScreenshotFrame">
+                <Image
+                  src="/images/parentlensai/parentlensai-trends1.png"
+                  alt="ParentLensAI medication and academic trend visualization"
+                  fill
+                  sizes="(max-width: 950px) 92vw, 46vw"
+                  className="parentLensImage parentLensImageContain"
+                />
+              </div>
+            </button>
 
             <figcaption>
               <strong>Longitudinal trends</strong>
@@ -586,6 +709,15 @@ export default function ParentLensAIPage() {
           ))}
         </div>
       </section>
+
+      {lightboxImage && (
+        <ImageLightbox
+          src={lightboxImage.src}
+          alt={lightboxImage.alt}
+          onClose={() => setLightboxImage(null)}
+        />
+      )}
+
     </main>
   );
 }

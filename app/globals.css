@@ -3003,7 +3003,7 @@ p {
 }
 
 .parentLensHeroImageFrame {
-  min-height: 410px;
+  min-height: 320px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.045);
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
@@ -3169,7 +3169,7 @@ p {
 }
 
 .parentLensFeatureImageFrame {
-  min-height: 520px;
+  min-height: 338px;
   border: 1px solid var(--border);
   background: white;
   box-shadow: 0 24px 70px rgba(17, 24, 39, 0.1);
@@ -3255,7 +3255,7 @@ p {
 }
 
 .parentLensScreenshotFrame {
-  min-height: 430px;
+  min-height: 360px;
   border: 1px solid var(--border);
   background: white;
   box-shadow: 0 22px 60px rgba(17, 24, 39, 0.08);
@@ -3520,6 +3520,153 @@ p {
 
   .parentLensPresentationFrame {
     min-height: 360px;
+  }
+}
+
+/* =========================================================
+   PARENTLENSAI IMAGE LIGHTBOX
+   ========================================================= */
+
+.parentLensImageButton {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.parentLensImageButton .parentLensImageFrame {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.parentLensImageButton:hover .parentLensImageFrame {
+  transform: scale(1.012);
+  box-shadow:
+    0 28px 70px rgba(17, 24, 39, 0.14),
+    0 8px 22px rgba(17, 24, 39, 0.08);
+}
+
+.parentLensImageButton:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: 26px;
+}
+
+.parentLensDarkSection .parentLensImageButton:focus-visible {
+  outline-color: var(--accent-secondary);
+}
+
+/* Lightbox overlay */
+
+.parentLensLightbox {
+  position: fixed;
+  z-index: 3000;
+  inset: 0;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 8, 18, 0.88);
+  backdrop-filter: blur(12px);
+  animation: parentLensLightboxFadeIn 180ms ease;
+}
+
+.parentLensLightboxContent {
+  position: relative;
+  width: min(94vw, 1500px);
+  height: min(90vh, 1000px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: #101827;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.5);
+}
+
+.parentLensLightboxImage {
+  object-fit: contain;
+  padding: 12px;
+}
+
+.parentLensLightboxClose {
+  position: fixed;
+  top: 22px;
+  right: 25px;
+  z-index: 3001;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.parentLensLightboxClose:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.05);
+}
+
+.parentLensLightboxClose:focus-visible {
+  outline: 2px solid var(--accent-secondary);
+  outline-offset: 4px;
+}
+
+@keyframes parentLensLightboxFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .parentLensLightbox {
+    padding: 18px;
+  }
+
+  .parentLensLightboxContent {
+    width: 96vw;
+    height: 84vh;
+    border-radius: 14px;
+  }
+
+  .parentLensLightboxImage {
+    padding: 6px;
+  }
+
+  .parentLensLightboxClose {
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parentLensImageButton .parentLensImageFrame,
+  .parentLensLightboxClose {
+    transition: none;
+  }
+
+  .parentLensLightbox {
+    animation: none;
   }
 }
 

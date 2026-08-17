@@ -167,7 +167,7 @@ export default function ParentLensAIPage() {
             className="parentLensImageButton"
             onClick={() =>
               setLightboxImage({
-                src: "/images/parentlensai/parentlensai-dashboard1.png",
+                src: "/images/parentlensai/parentlensai-dashboard2.png",
                 alt: "ParentLensAI dashboard showing child information, tasks, notes, and trends",
               })
             }
@@ -175,7 +175,7 @@ export default function ParentLensAIPage() {
           >
             <div className="parentLensImageFrame parentLensHeroImageFrame">
               <Image
-                src="/images/parentlensai/parentlensai-dashboard1.png"
+                src="/images/parentlensai/parentlensai-dashboard2.png"
                 alt="ParentLensAI dashboard showing child information, tasks, notes, and trends"
                 fill
                 priority

@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="heroProfileLinks">
             <a
-              href="/documents/brady-zhou-resume-aug-2026.pdf"
+              href="/documents/brady-zhou-resume.pdf"
               target="_blank"
               rel="noreferrer"
             >

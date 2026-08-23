@@ -675,7 +675,7 @@ export default function Home() {
               <p className="leadershipOrganization">
                 Walton High School 
               </p>
-              <h3>STEM AMS Student Representative</h3>
+              <h3>STEM AMS Student Representative Class of 2027</h3>
               <p><strong>2023 - Present</strong></p>
 
               <p>

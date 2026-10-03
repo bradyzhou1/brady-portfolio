@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 
 const identities = [
-  "Researcher",
+  "AI/ML Researcher",
+  "Nonprofit Leader",
+  "Violinist",
   "Developer",
-  "Musician",
-  "Student Leader",
-  "Caring brother to an austic sibling"
+  "Community Volunteer",
+  "Caring Brother"
 ];
 
 export default function TypingIdentity() {

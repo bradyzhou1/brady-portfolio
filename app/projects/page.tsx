@@ -108,7 +108,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Environmental Research · Community Science",
     title: "Microplastics Mapping in the Chattahoochee River",
     description:
-      "Contributed to a community-engaged research project investigating microplastic pollution and presented the team’s work at Atlanta City Hall.",
+      "Funded by Atlanta Mayor\’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The PI was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate, presented our project and poster in the Atlanta City Hall in Dec, 2025.",
     link: {
       label: "Explore Project",
       href: "https://sites.google.com/view/microplastics-ycaf2025/home",

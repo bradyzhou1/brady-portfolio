@@ -118,40 +118,24 @@ export default function Home() {
 
             <div className="aboutStory">
               <p>
-                I am a student researcher, developer, 
-                violinist, and student leader interested 
-                in how computer science can help us better understand people and respond to real needs.
+              My interest in research became deeply personal through my younger brother, who is autistic. During my sophomore year, he experienced a profound regression. 
+              Although his clinical MRI showed no structural abnormality, I became curious about what changes in brain function might remain invisible to conventional imaging. 
+              That question led me to investigate autism-related patterns in functional brain connectivity using resting-state fMRI data, and ultimately to present the work as a Regeneron ISEF finalist.
               </p>
 
               <p>
-                Much of that interest grew from my relationship with my younger brother, Mason, 
-                who is autistic. During my sophomore year, he experienced a profound regression. 
-                Although his clinical MRI showed no structural abnormality, I was left wondering 
-                what changes in the brain might not be visible through conventional imaging. 
-                That question led me to study autism-related patterns in functional brain connectivity 
-                using resting-state fMRI. I developed a machine-learning research pipeline, investigated 
-                how validation methods and research-site differences could influence results, 
-                and ultimately presented the project as a Regeneron ISEF finalist.             
+              At the same time, watching my family navigate therapy notes, medical records, school documents, and medications inspired me to create ParentLensAI, 
+              a privacy-focused, on-device app that helps families bring all their care information together in one place and generates more insights as more data is added.       
               </p>
                 
               <p>
-                At the same time, I watched my family navigate therapy notes, medical records, 
-                school documents, medications, and long periods of uncertainty. I began to see 
-                how fragmented information can make an already difficult process even harder. 
-                That experience inspired ParentLensAI, an AI-powered platform that uses large 
-                language models, retrieval-augmented generation, and vector search to help families 
-                organize and understand educational, medical, therapeutic, and daily-life information 
-                in one connected system.
+              Beyond technology, eight years of violin have taught me to listen carefully, work patiently, and contribute as part of an ensemble. 
+              As co-president of FirstStep and through school and community projects, I've learned that ideas become meaningful when people work together to turn them into action.
               </p>
 
               <p>
-                Outside of technology, violin has taught me patience, discipline, and how to listen 
-                closely to others. Leadership roles in my school, student organizations, and community 
-                initiatives have taught me how to communicate, take responsibility, 
-                and help a group move toward a shared goal. Whether I am conducting research, 
-                building software, solving an engineering problem, rehearsing with an orchestra, 
-                or leading a team, I am drawn to the same process: observe carefully, ask better 
-                questions, collaborate thoughtfully, and build with purpose.
+              Across research, technology, music, and service, I keep coming back to the same habits: ask questions from different perspectives, 
+              connect ideas that seem unrelated, listen to the people involved, and turn what I learn into something useful.
               </p>
             </div>
           </div>
@@ -193,7 +177,7 @@ export default function Home() {
               <p className="snapshotCardLabel">Academic Record</p>
 
               <strong>
-                <CountUp value={4.69} decimals={2} duration={1.5} />
+                <CountUp value={4.688} decimals={3} duration={1.5} />
               </strong>
 
               <h3>Weighted GPA</h3>
@@ -214,9 +198,9 @@ export default function Home() {
               <h3>SAT · First Sitting</h3>
 
               <p>
-                790 Math
-                <br />
                 750 Reading & Writing
+                <br />
+                790 Math
               </p>
           </article>
 
@@ -227,9 +211,10 @@ export default function Home() {
               <h3>Academic Honors</h3>
 
               <ul className="snapshotList">
+                <li>2027 National Merit Semifinalist</li>
                 <li>Georgia Certificate of Merit</li>
-                <li>Outstanding Achievement — STEM Academy</li>
-                <li>Outstanding Achievement — English Department</li>
+                <li>Outstanding Student — STEM Academy</li>
+                <li>Outstanding Student — English Department</li>
                 <li>AP Scholar with Distinction</li>
               </ul>
           </article>
@@ -267,17 +252,17 @@ export default function Home() {
           <article className="snapshotCard">
               <p className="snapshotCardLabel">Academic Rigor</p>
 
-              <h3>Senior Coursework</h3>
+              <h3>AP & College Level Coursework</h3>
 
               <ul className="snapshotList">
-                <li>AP Cybersecurity</li>
-                <li>Georgia Tech Multivariable Calculus</li>
-                <li>Georgia Tech Linear Algebra</li>
+                <li>GT Linear Algebra & Multivariable Calculus</li>
                 <li>AP Research</li>
+                <li>AP Seminar</li>
+                <li>AP Chemistry</li>
                 <li>AP Biology</li>
-                <li>AP English Literature</li>
-                <li>AP World History</li>
-                <li>Chamber Orchestra</li>
+                <li>AP Physics C: Mechanics</li>
+                <li>AP Cybersecurity</li>
+                <li>AP Computer Science A</li>
               </ul>
           </article>
 
@@ -288,8 +273,8 @@ export default function Home() {
               <h3>Technical Experiences</h3>
 
               <ul className="snapshotList">
-                <li>Georgia Tech STEP — Aerospace Engineering</li>
-                <li>Seth Bonder Computational & Data Science Camp</li>
+                <li>GT STEP Internship – Department of Aerospace Engineering</li>
+                <li>GT Seth Bonder Computational & Data Science Camp</li>
                 <li>Independent AI/ML Research</li>
                 <li>ParentLensAI Development & Beta Testing</li>
               </ul>
@@ -301,18 +286,17 @@ export default function Home() {
                 <div>
                   <p className="snapshotCardLabel">Current Research Milestone</p>
 
-                  <h3>Preparing for the 2027 Regeneron Science Talent Search</h3>
+                  <h3>Research in Progress - From ISEF to STS</h3>
 
                   <p>
-                    Building on the autism brain-connectivity study I presented at
-                    Regeneron ISEF, I am preparing an expanded research report for
-                    submission to the 2027 Regeneron Science Talent Search.
+                    Building on the autism brain-connectivity research I presented at Regeneron ISEF, 
+                    I am expanding the study into a full research paper, 
+                    developed to the 20-page submission limit for the 2027 Regeneron Science Talent Search.
                   </p>
                 </div>
 
                 <div className="snapshotResearchStatus">
-                  <span>2027</span>
-                  <p>Planned STS Submission</p>
+                  <span>November 2027 - Planned Regeneron STS Submission</span>
                 </div>
               </div>
           </article>
@@ -423,31 +407,27 @@ export default function Home() {
               </h2>
 
               <p>
-                Families of children with complex needs often manage years of IEPs,
-                evaluations, medical records, therapy notes, medications, school
-                information, appointments, and daily observations across separate
-                systems.
+                Families of children with complex needs often manage years of 
+                IEPs, evaluations, medical records, therapy notes, medications, 
+                school information, appointments, and daily observations across disconnected systems.
               </p>
 
               <p>
-                ParentLensAI brings those pieces together in one local-first platform.
-                It combines intelligent document search, retrieval-augmented
-                generation, structured tracking, dashboards, tasks, and notes to help
-                parents understand information in context rather than one document at
-                a time.
+                ParentLensAI brings these pieces together in a on-device platform, 
+                helping parents search, organize, and understand information in context 
+                rather than one document at a time.
               </p>
 
               <ul className="featureList">
                 <li>Document upload, indexing, summaries, and semantic search</li>
-                <li>RAG-based questions grounded in family records</li>
+                <li>RAG-based questions grounded in family documents</li>
                 <li>Medication, academic, and progress trend visualization</li>
-                <li>Local data storage with optional local AI models</li>
+                <li>Local data storage with a choice of local AI models</li>
               </ul>
 
               <p className="parentLensBetaNote">
-                ParentLensAI is currently in beta testing with parents of children with
-                special needs, gathering feedback on usability, usefulness, and
-                privacy-conscious design.
+                ParentLensAI is currently in beta testing with parents of children with special needs, 
+                gathering feedback on usability, usefulness, and privacy-conscious design.
               </p>
 
               <Link href="/parentlensai" className="parentLensHomeButton">

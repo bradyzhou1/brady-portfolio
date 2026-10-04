@@ -9,7 +9,7 @@ const featuredProjects = [
     title: "Microplastics Mapping",
     category: "Environmental Research",
     description:
-      "A collaborative community-research project investigating microplastic pollution in the Chattahoochee River.",
+      "Funded by Atlanta Mayor’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The PI was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate presented our project and poster in the Atlanta City Hall in Dec, 2025.",
     href: "/projects",
     number: "01",
   },
@@ -216,7 +216,7 @@ export default function Home() {
 
           {/* ACADEMIC RECOGNITION */}
           <article className="snapshotCard">
-              <p className="snapshotCardLabel">Selected Recognition</p>
+              <p className="snapshotCardLabel">Selected Recognitions</p>
 
               <h3>Academic Honors</h3>
 
@@ -259,13 +259,15 @@ export default function Home() {
           </article>
 
           {/* SENIOR COURSEWORK */}
-          <article className="snapshotCard">
+          <article className="snapshotCard snapshotCourseworkCard">
               <p className="snapshotCardLabel">Academic Rigor</p>
 
               <h3>AP & College Level Coursework</h3>
 
               <ul className="snapshotList">
                 <li>GT Linear Algebra & Multivariable Calculus</li>
+                <li>AP Calculus BC</li>
+                <li>AP Precalculus</li>
                 <li>AP Research</li>
                 <li>AP Seminar</li>
                 <li>AP Chemistry</li>
@@ -273,11 +275,13 @@ export default function Home() {
                 <li>AP Physics C: Mechanics</li>
                 <li>AP Cybersecurity</li>
                 <li>AP Computer Science A</li>
+                <li>AP English Literature</li>
+                <li>AP English Language</li>
               </ul>
           </article>
 
           {/* TECHNICAL EXPERIENCES */}
-          <article className="snapshotCard">
+          <article className="snapshotCard snapshotTechnicalCard">
               <p className="snapshotCardLabel">Beyond the Classroom</p>
 
               <h3>Technical Experiences</h3>
@@ -669,11 +673,10 @@ export default function Home() {
               <p><strong>2023 - Present</strong></p>
 
               <p>
-                A prestigae, appointed four-year role as the sole Student Representative 
-                for STEM Academy, Advanced Math and Science Pathway, Class of 2027,
-                supporting academy initiatives, student events,
-                partnerships, and communication between students and program
-                leadership.
+                An appointed four-year role as the sole Student Representative for the STEM Academy 
+                Advanced Math and Science Pathway, representing the Class of 2027 and supporting 
+                academy initiatives, student events, partnerships, and communication between 
+                students and program leadership.
               </p>
             </div>
           </article>
@@ -720,7 +723,7 @@ export default function Home() {
               <p className="leadershipOrganization">
                 Mockingbird Melody Georgia Chapter
               </p>
-              <h3>Founding Member & Treasurer</h3>
+              <h3>Founding Member, Treasurer, & Volunteer Violinist</h3>
               <p><strong>2025 - Present</strong></p>
               <p>
                 Recruited student musicians, helped coordinate performances, and
@@ -753,10 +756,117 @@ export default function Home() {
                 Expect Respect Anti-Bullying Advisory Council
               </p>
               <h3>Student Representative</h3>
-              <p><strong>2023 - Present</strong></p>
+              <p><strong>2023 - 2025</strong></p>
               <p>
                 Contributed a student perspective to district-wide efforts focused on
                 safer and more respectful school communities.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div style={{ height: "75px" }} />
+
+        <div className="leadershipHeader">
+          <h2>
+            Recognition for leadership, initiative, and community impact
+          </h2>
+        </div>
+
+        <div className="leadershipExperienceList">
+
+          <article>
+            <span>01</span>
+
+            <div>
+              <h3>President's Volunteer Service Award - Gold Level</h3>
+
+              <p><strong>2023 - 2025</strong></p>
+
+              <p>
+                Recognized for more than 100 hours of community service annually. 
+                Continued volunteering at the same level after 
+                the national program was discontinued in 2025.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+
+            <div>
+              <h3>North American Prominent Chinese American High School Student Public Service Scholarship</h3>
+
+              <p><strong>2026</strong></p>
+
+              <p>
+                One of four scholarship recipients 
+                recognized by the American Chinese Next Generation Education Foundation 
+                for academic achievement and commitment to public service.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+
+            <div>
+              <h3>Shine-A-Light Award</h3>
+
+              <p><strong>2023 - 2025</strong></p>
+
+              <p>
+                Recognized by the American Chinese Next Generation Education Foundation 
+                for impactful volunteer service to the community.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div style={{ height: "50px" }} />
+
+        <div className="leadershipHeader">
+          <h2>
+            Developing the skills to lead, collaborate, and build lasting programs
+          </h2>
+        </div>
+
+        <div className="leadershipExperienceList">
+
+          <article>
+            <span>01</span>
+
+            <div>
+              <p className="leadershipOrganization">
+                Dale Carnegie
+              </p>
+
+              <h3>Dale Carnegie Leadership Training</h3>
+
+              <p><strong>2023</strong></p>
+
+              <p>
+                Selected trainee & scholarship recipient that completed an intensive weeklong program 
+                through North America Volunteers with a Carnegie-certified trainer.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+
+            <div>
+              <p className="leadershipOrganization">
+                North America Volunteers
+              </p>
+
+              <h3>North America Volunteers Leadership Camp</h3>
+
+              <p><strong>2023</strong></p>
+
+              <p>
+                Selected participant & scholarship recipient that completed an intensive residential leadership program 
+                focused on teamwork, communication, and leadership development.
               </p>
             </div>
           </article>

@@ -104,6 +104,16 @@ export default function Home() {
                 className="aboutImage"
               />
             </div>
+
+            <div className="aboutPhoto aboutPhotoTertiary">
+              <Image
+                src="/images/infantrymuseum.jpg"
+                alt="Brady and Mason at the National Infantry Museum"
+                fill
+                sizes="(max-width: 900px) 90vw, 36vw"
+                className="aboutImage"
+              />
+            </div>
           </div>
         </Reveal>
 
@@ -273,8 +283,8 @@ export default function Home() {
               <h3>Technical Experiences</h3>
 
               <ul className="snapshotList">
-                <li>GT STEP Internship – Department of Aerospace Engineering</li>
-                <li>GT Seth Bonder Computational & Data Science Camp</li>
+                <li>Georgia Tech STEP Internship – Department of Aerospace Engineering</li>
+                <li>Georgia Tech Seth Bonder Computational & Data Science Camp</li>
                 <li>Independent AI/ML Research</li>
                 <li>ParentLensAI Development & Beta Testing</li>
               </ul>

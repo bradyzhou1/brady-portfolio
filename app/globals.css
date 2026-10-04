@@ -582,7 +582,8 @@ p {
   }
 
   .aboutPhotoPrimary,
-  .aboutPhotoSecondary {
+  .aboutPhotoSecondary,
+  .aboutPhotoTertiary {
     width: 72%;
     aspect-ratio: 4 / 5;
   }
@@ -594,6 +595,10 @@ p {
   .aboutPhotoSecondary {
     align-self: flex-end;
     border: 0;
+  }
+
+  .aboutPhotoTertiary {
+    align-self: flex-start;
   }
 }
 

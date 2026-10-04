@@ -44,7 +44,7 @@ import CountUp from "@/components/CountUp";
 const awardGroups = [
   {
     level: "International",
-    event: "Regeneron International Science and Engineering Fair",
+    event: "Regeneron International Science & Engineering Fair",
     shortName: "ISEF",
     recognitions: ["ISEF Finalist"],
   },
@@ -56,15 +56,15 @@ const awardGroups = [
       "Regeneron ISEF Award - Top 4",
       "Top Ten Grand Award",
       "Best in Category - Computational Biology & Bioinformatics",
-      "First Honor Award",
+      "First Honors Award",
     ],
     specialAward: {
-      title: "Citadel Securities Innovation Prize",
-      description: "Recognized for Exceptional Data Analysis Techniques",
+      title: "CITADEL Securities Innovation Prize",
+      description: "Recognized for ingenuity and data-driven decision-making",
     },
   },
   {
-    level: "Regional",
+    level: "County",
     event: "Cobb-Paulding Regional Science Fair",
     shortName: "Regional",
     recognitions: ["First Place Winner"],
@@ -84,12 +84,12 @@ const findings = [
   },
   {
     textValue: "p ≤ 0.001",
-    label: "Permutation significance",
+    label: "Permutation test significance",
   },
   {
     value: 24,
     decimals: 0,
-    label: "Unseen-site tests",
+    label: "Unseen sites tested",
   },
 ];
 
@@ -104,7 +104,7 @@ export default function ResearchPage() {
           </a>
 
           <p className="researchEyebrow">
-            Regeneron ISEF Finalist · Computational Biology
+            Regeneron ISEF Finalist · Computational Biology and Bioinformatics
           </p>
 
           <h1>
@@ -114,7 +114,7 @@ export default function ResearchPage() {
           <p className="researchHeroSummary">
             Using resting-state fMRI and interpretable machine learning, I
             investigated subtle autism-related patterns in functional brain
-            connectivity, and the research-site effects that challenge
+            connectivity and the research-site effects that challenge
             real-world generalization.
           </p>
 
@@ -152,7 +152,7 @@ export default function ResearchPage() {
           </div>
 
           <p className="researchCaption">
-            Influential connections were distributed across brain networks
+            Influential connections were distributed across the entire brain
             rather than concentrated in one “autism region.”
           </p>
         </div>
@@ -164,18 +164,18 @@ export default function ResearchPage() {
         <Reveal delay={0.1}>
           <div className="researchTwoColumn">
             <div>
-              <p className="researchSectionLabel">Why I did this</p>
+              <p className="researchSectionLabel"></p>
 
               <h2>
-                The question began with someone close to me.
+                My questions began with someone close to me.
               </h2>
             </div>
 
             <div className="researchBodyCopy">
               <p>
-                This project began with my younger brother, Mason. During my
+                This project began with my younger brother. During my
                 sophomore year, he experienced a profound regression, yet his
-                clinical MRI showed no structural abnormality.
+                clinical MRI showed no structural abnormalities.
               </p>
 
               <p>
@@ -194,7 +194,7 @@ export default function ResearchPage() {
       <section className="researchDarkSection">
         <Reveal delay={0}>
           <div className="researchSectionHeading">
-            <p className="researchSectionLabel">What I did</p>
+            <p className="researchSectionLabel"></p>
 
             <h2>
               From brain signals to a rigorous multisite machine-learning test
@@ -202,7 +202,7 @@ export default function ResearchPage() {
 
             <p>
               I built a complete analysis pipeline using public, de-identified
-              ABIDE neuroimaging data.
+              neuroimaging data from ABIDE.
             </p>
           </div>
         </Reveal>
@@ -224,7 +224,7 @@ export default function ResearchPage() {
                 <article>
                   <span>01</span>
                   <div>
-                    <h3>Build the connectome</h3>
+                    <h3>Built the connectome</h3>
                     <p>
                       Converted signals from 200 brain regions into 19,900 unique
                       pairwise connectivity features.
@@ -237,7 +237,7 @@ export default function ResearchPage() {
                 <article>
                   <span>02</span>
                   <div>
-                    <h3>Explore the data</h3>
+                    <h3>Explored the data</h3>
                     <p>
                       Used PCA and UMAP to examine whether patterns reflected
                       diagnosis or research site.
@@ -250,7 +250,7 @@ export default function ResearchPage() {
                 <article>
                   <span>03</span>
                   <div>
-                    <h3>Test generalization</h3>
+                    <h3>Tested real-world generalization</h3>
                     <p>
                       Trained logistic-regression models and tested each one on an
                       entirely unseen hospital or scanner site.
@@ -263,7 +263,7 @@ export default function ResearchPage() {
                 <article>
                   <span>04</span>
                   <div>
-                    <h3>Challenge the result</h3>
+                    <h3>Challenged the results</h3>
                     <p>
                       Used permutation testing, confidence intervals, site-balanced
                       analysis, and model interpretation to evaluate reliability.
@@ -309,10 +309,10 @@ export default function ResearchPage() {
       {/* FINDINGS */}
       <section className="researchLightSection">
         <div className="researchSectionHeading">
-          <p className="researchSectionLabel">What I found</p>
+          <p className="researchSectionLabel"></p>
 
           <h2>
-            The signal was real, but the limitations mattered just as much.
+            The signal was important, but the limitations mattered just as much.
           </h2>
         </div>
 
@@ -322,7 +322,7 @@ export default function ResearchPage() {
               <article>
                 <span>01</span>
                 <div>
-                  <h3>Subtle and distributed</h3>
+                  <h3>Subtle and distributed differences</h3>
                   <p>
                     Autism-related connectivity differences appeared across many
                     brain-network interactions rather than in one isolated brain
@@ -336,7 +336,7 @@ export default function ResearchPage() {
               <article>
                 <span>02</span>
                 <div>
-                  <h3>Site effects were powerful</h3>
+                  <h3>Site effects weren't negligible</h3>
                   <p>
                     Scanner and research-site differences were substantially
                     stronger than diagnosis effects, making strict multisite
@@ -350,7 +350,7 @@ export default function ResearchPage() {
               <article>
                 <span>03</span>
                 <div>
-                  <h3>Above chance, not diagnostic</h3>
+                  <h3>Above chance, but not diagnostic</h3>
                   <p>
                     The model performed significantly above chance on unseen
                     sites, but its accuracy was not sufficient for standalone
@@ -368,7 +368,7 @@ export default function ResearchPage() {
                   <p>
                     The most informative and reproducible connections were centered on
                     interactions between limbic, attention, control, sensory-motor, and
-                    default-mode networks. These patterns are consistent with commonly
+                    default-mode networks, consistent with commonly
                     reported autism-related differences in emotion regulation, sensory
                     processing, and attentional shifting.
                   </p>
@@ -392,7 +392,7 @@ export default function ResearchPage() {
 
               <figcaption className="researchCaption researchCaptionLight">
                 PCA and UMAP showed that participants clustered more strongly by
-                research site than by diagnosis.
+                scanning site than by diagnosis.
               </figcaption>
             </figure>
           </div>
@@ -421,9 +421,9 @@ export default function ResearchPage() {
           <p className="researchSectionLabel">What I learned</p>
 
           <blockquote>
-            A model’s accuracy is not enough. I learned to ask what information
+            A model’s accuracy is not enough. You need to ask what information
             the model might be exploiting, whether the evaluation reflects the
-            real setting, and how uncertainty should shape the claims I make.
+            real setting, and how uncertainty should shape claims made.
           </blockquote>
         </div>
       </section>

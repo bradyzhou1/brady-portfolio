@@ -781,7 +781,7 @@ export default function Home() {
             <div>
               <h3>President's Volunteer Service Award - Gold Level</h3>
 
-              <p><strong>2023 - 2025</strong></p>
+              <p><strong>2023</strong></p>
 
               <p>
                 Recognized for more than 100 hours of community service annually. 
@@ -813,7 +813,7 @@ export default function Home() {
             <div>
               <h3>Shine-A-Light Award</h3>
 
-              <p><strong>2023 - 2025</strong></p>
+              <p><strong>2023 - 2026</strong></p>
 
               <p>
                 Recognized by the American Chinese Next Generation Education Foundation 

@@ -500,7 +500,7 @@ export default function ParentLensAIPage() {
           <div className="parentLensPresentationVisual">
             <div className="parentLensImageFrame parentLensPresentationFrame">
               <Image
-                src="/images/projects/parentlensai.png"
+                src="/images/projects/parentlensai2.png"
                 alt="Brady presenting the ParentLensAI system architecture"
                 fill
                 sizes="(max-width: 950px) 92vw, 52vw"

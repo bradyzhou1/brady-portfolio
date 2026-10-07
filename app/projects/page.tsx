@@ -108,7 +108,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Environmental Research · Community Science",
     title: "Microplastics Mapping in the Chattahoochee River",
     description:
-      "Funded by Atlanta Mayor\’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The PI was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate, presented our project and poster in the Atlanta City Hall in Dec, 2025.",
+      "Funded by Atlanta Mayor\’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The principal investigator was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate, presented our project and poster in the Atlanta City Hall.",
     link: {
       label: "Explore Project",
       href: "https://sites.google.com/view/microplastics-ycaf2025/home",
@@ -116,9 +116,13 @@ const additionalProjects: AdditionalProject[] = [
   },
   {
     category: "Applied Mathematics · Data Science",
-    title: "MathWorks Math Modeling Challenge",
+    title: "MathWorks Math Modeling (M3) Challenge",
     description:
       "My five-person team participated in a 14-hour mathematical modeling challenge focused on predicting sports-betting behavior based on demographic data. We developed a model, ran simulations, analyzed the results, and wrote a paper explaining our methodology and findings. Although we did not advance to the next round, the experience strengthened my skills in data modeling, simulation, collaborative problem-solving, and communicating technical results.",
+    link: {
+      label: "Explore Challenge",
+      href: "https://m3challenge.siam.org/the-challenge/",
+    }
   },
 ];
 

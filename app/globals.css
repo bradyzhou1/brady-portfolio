@@ -498,7 +498,7 @@ p {
 
 .aboutSection {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
 }
@@ -521,17 +521,25 @@ p {
 .aboutPhotoPrimary {
   top: -150px;
   left: 0;
-  width: 80%;
+  width: 64%;
   aspect-ratio: 4 / 5;
   z-index: 1;
 }
 
 .aboutPhotoSecondary {
-  right: 0;
-  bottom: -10px;
-  width: 80%;
+  right: -50px;
+  bottom: 175px;
+  width: 64%;
   aspect-ratio: 4 / 5;
   z-index: 2;
+}
+
+.aboutPhotoTertiary {
+  left: 25px;
+  bottom: -125px;
+  width: 64%;
+  aspect-ratio: 4 / 5;
+  z-index: 3;
 }
 
 .aboutImage {
@@ -4044,6 +4052,66 @@ p {
   color: white;
   font-size: 1.25rem;
   line-height: 1.25;
+}
+
+.leadershipAwardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.leadershipAwardList > article {
+  grid-column: 1;
+}
+
+.leadershipAwardList article {
+  min-height: 260px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.leadershipAwardList article:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.085);
+}
+
+.leadershipAwardList article > span {
+  color: var(--accent-secondary);
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.leadershipAwardList h3 {
+  margin: 5px 0 13px;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.leadershipAwardPicture {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  width: 80%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.leadershipAwardPicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .leadershipOrganization {

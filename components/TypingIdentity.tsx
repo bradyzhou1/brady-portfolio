@@ -6,7 +6,7 @@ const identities = [
   "AI/ML Researcher",
   "Nonprofit Leader",
   "Violinist",
-  "Developer",
+  "App Developer",
   "Community Volunteer",
   "Caring Brother"
 ];

@@ -9,7 +9,7 @@ const featuredProjects = [
     title: "Microplastics Mapping",
     category: "Environmental Research",
     description:
-      "Funded by Atlanta Mayor’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The PI was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate presented our project and poster in the Atlanta City Hall in Dec, 2025.",
+      "A community engaged research project that created the first microplastics map of the Chattahoochee River in the Metro Atlanta area.",
     href: "/projects",
     number: "01",
   },
@@ -223,9 +223,9 @@ export default function Home() {
               <ul className="snapshotList">
                 <li>2027 National Merit Semifinalist</li>
                 <li>Georgia Certificate of Merit</li>
-                <li>Outstanding Student — STEM Academy</li>
-                <li>Outstanding Student — English Department</li>
-                <li>AP Scholar with Distinction</li>
+                <li>Outstanding Achievement — STEM Academy</li>
+                <li>Outstanding Achievement — English Department</li>
+                <li>AP Capstone Diploma — Anticipated</li>
               </ul>
           </article>
 
@@ -265,14 +265,17 @@ export default function Home() {
               <h3>AP & College Level Coursework</h3>
 
               <ul className="snapshotList">
-                <li>GT Linear Algebra & Multivariable Calculus</li>
+                <li>Georgia Tech Linear Algebra</li>
+                <li>Georgia Tech Multivariable Calculus</li>
                 <li>AP Calculus BC</li>
+                <li>AP Statistics</li>
                 <li>AP Precalculus</li>
                 <li>AP Research</li>
                 <li>AP Seminar</li>
                 <li>AP Chemistry</li>
                 <li>AP Biology</li>
                 <li>AP Physics C: Mechanics</li>
+                <li>AP Environmental Science</li>
                 <li>AP Cybersecurity</li>
                 <li>AP Computer Science A</li>
                 <li>AP English Literature</li>
@@ -298,19 +301,19 @@ export default function Home() {
           <article className="snapshotCard snapshotResearchCard">
               <div className="snapshotResearchContent">
                 <div>
-                  <p className="snapshotCardLabel">Current Research Milestone</p>
+                  <p className="snapshotCardLabel">Research in Progress</p>
 
-                  <h3>Research in Progress - From ISEF to STS</h3>
+                  <h3>From ISEF to STS</h3>
 
                   <p>
                     Building on the autism brain-connectivity research I presented at Regeneron ISEF, 
                     I am expanding the study into a full research paper, 
-                    developed to the 20-page submission limit for the 2027 Regeneron Science Talent Search.
+                    developed to the 20-page submission limit for the 2027 Regeneron Scientific Talent Search (STS).
                   </p>
                 </div>
 
                 <div className="snapshotResearchStatus">
-                  <span>November 2027 - Planned Regeneron STS Submission</span>
+                  <span>Submitted Regeneron STS Application, October 2027</span>
                 </div>
               </div>
           </article>
@@ -427,7 +430,7 @@ export default function Home() {
               </p>
 
               <p>
-                ParentLensAI brings these pieces together in a on-device platform, 
+                ParentLensAI brings these pieces together in an on-device AI platform, 
                 helping parents search, organize, and understand information in context 
                 rather than one document at a time.
               </p>
@@ -436,12 +439,12 @@ export default function Home() {
                 <li>Document upload, indexing, summaries, and semantic search</li>
                 <li>RAG-based questions grounded in family documents</li>
                 <li>Medication, academic, and progress trend visualization</li>
-                <li>Local data storage with a choice of local AI models</li>
+                <li>Powered by local LLMs, managed by Ollama</li>
               </ul>
 
               <p className="parentLensBetaNote">
                 ParentLensAI is currently in beta testing with parents of children with special needs, 
-                gathering feedback on usability, usefulness, and privacy-conscious design.
+                gathering feedback on privacy and data protection, usability, and usefulness.
               </p>
 
               <Link href="/parentlensai" className="parentLensHomeButton">
@@ -773,7 +776,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="leadershipExperienceList">
+        <div className="leadershipAwardList">
 
           <article>
             <span>01</span>
@@ -821,6 +824,10 @@ export default function Home() {
               </p>
             </div>
           </article>
+
+          <div className="leadershipAwardPicture">
+            <img src="\images\leadership-award.png" alt="North American Prominent Chinese American High School Student Public Service Scholarship Ceremony" />
+          </div>
         </div>
         
         <div style={{ height: "50px" }} />
@@ -877,11 +884,10 @@ export default function Home() {
       <section id="contact" className="contactSection">
         <p className="eyebrow">Connect</p>
 
-        <h2>Thank you for exploring my work.</h2>
+        <h2>Thank you for checking out my work.</h2>
 
         <p>
-          My projects continue to evolve as I learn, build, and explore new
-          questions.
+          My projects continue to evolve as I learn, build, and explore new questions.
         </p>
 
         <div className="contactLinks">

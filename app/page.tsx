@@ -536,10 +536,7 @@ export default function Home() {
             <p>
               Most importantly, music has become a way for me to serve. I have
               performed for residents of senior communities, supported holiday
-              fundraising recitals, and played for children with special needs,
-              including children like my younger brother Mason. These experiences
-              have shown me that music can offer comfort and connection even when
-              words are limited.
+              fundraising recitals, and played for children with special needs.
             </p>
           </div>
 

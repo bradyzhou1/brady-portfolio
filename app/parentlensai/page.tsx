@@ -217,7 +217,7 @@ export default function ParentLensAIPage() {
 
               <p>
                 I saw this challenge in my own family while helping care for my
-                younger brother, Mason. Important details existed across folders,
+                younger brother. Important details existed across folders,
                 documents, conversations, and memories, but there was no simple
                 way to see how they connected.
               </p>

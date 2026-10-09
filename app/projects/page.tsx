@@ -94,6 +94,17 @@ const projects: Project[] = [
 const additionalProjects: AdditionalProject[] = [
 
   {
+    category: "Environmental Research · Community Science",
+    title: "Microplastics Mapping in the Chattahoochee River",
+    description:
+      "Funded by Atlanta Mayor\’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The principal investigator was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate, presented our project and poster in the Atlanta City Hall.",
+    link: {
+      label: "Explore Project",
+      href: "https://sites.google.com/view/microplastics-ycaf2025/home",
+    },
+  },
+
+  {
     category: "Georgia Tech Aerospace Engineering Internship",
     title: "Lunar Rover Engineering",
     description:
@@ -104,16 +115,6 @@ const additionalProjects: AdditionalProject[] = [
     },
   },
 
-  {
-    category: "Environmental Research · Community Science",
-    title: "Microplastics Mapping in the Chattahoochee River",
-    description:
-      "Funded by Atlanta Mayor\’s Office, Youth Climate Action Fund, and Bloomberg Philanthropies. The principal investigator was Michelle Huang, Prof. of Chemistry, Georgia Gwinnett College. Our Team Leader, a Georgia Tech Environmental Science undergraduate, presented our project and poster in the Atlanta City Hall.",
-    link: {
-      label: "Explore Project",
-      href: "https://sites.google.com/view/microplastics-ycaf2025/home",
-    },
-  },
   {
     category: "Applied Mathematics · Data Science",
     title: "MathWorks Math Modeling (M3) Challenge",

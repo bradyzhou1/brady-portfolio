@@ -509,7 +509,7 @@ export default function Home() {
             </h2>
 
             <p>
-              Violin has been one of the longest commitments in my life. Over nine
+              Violin has been one of the longest commitments in my life. Over eight
               years of lessons, daily practice, rehearsals, auditions, and
               performances have taught me that progress rarely arrives all at once.
               It is built through patience, attention to detail, and the willingness
@@ -569,6 +569,24 @@ export default function Home() {
 
               <p className="musicVideoCaption">August 2026 violin solo</p>
             </div>
+
+            <div className="musicMedia">
+              <div className="musicVideoFrame">
+                <iframe
+                  src="https://www.youtube.com/embed/YIAoOqcbBWg"
+                  title="Brady Zhou June 2023 String Quintet at Emory University"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+
+              <p className="musicVideoCaption">June 2023 <strong>Brady Zhou (far left) </strong> String Quintet at Emory University</p>
+            </div>
+
+
+
+
           </div>
         </div>
 
@@ -781,12 +799,12 @@ export default function Home() {
             <div>
               <h3>President's Volunteer Service Award - Gold Level</h3>
 
-              <p><strong>2023</strong></p>
+              <p><strong>2023, 2024*, 2025*</strong></p>
 
               <p>
                 Recognized for more than 100 hours of community service annually. 
-                Continued volunteering at the same level after 
-                the national program was discontinued in 2025.
+                *Continued volunteering at the same level after 
+                the national program was paused.
               </p>
             </div>
           </article>
@@ -813,7 +831,7 @@ export default function Home() {
             <div>
               <h3>Shine-A-Light Award</h3>
 
-              <p><strong>2023 - 2026</strong></p>
+              <p><strong>2023, 2024, 2025</strong></p>
 
               <p>
                 Recognized by the American Chinese Next Generation Education Foundation 

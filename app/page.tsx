@@ -66,7 +66,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/brady-zhou-8812b7412"
               target="_blank"
               rel="noreferrer"
             >
@@ -923,7 +923,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/brady-zhou-8812b7412"
             target="_blank"
             rel="noreferrer"
           >

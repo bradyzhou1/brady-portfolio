@@ -313,7 +313,7 @@ export default function Home() {
                 </div>
 
                 <div className="snapshotResearchStatus">
-                  <span>Submitted Regeneron STS Application, October 2027</span>
+                  <span>Submitted Regeneron STS Application, October 2026</span>
                 </div>
               </div>
           </article>

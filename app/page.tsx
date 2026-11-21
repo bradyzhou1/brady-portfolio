@@ -553,7 +553,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="musicVideoCaption">December 2025 violin solo</p>
+              <p className="musicVideoCaption">November 2026 violin solo with Walton Chamber</p>
             </div>
 
             <div className="musicMedia">
@@ -567,7 +567,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="musicVideoCaption">August 2026 violin solo</p>
+              <p className="musicVideoCaption">December 2025 violin solo</p>
             </div>
 
             <div className="musicMedia">

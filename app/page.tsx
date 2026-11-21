@@ -559,7 +559,7 @@ export default function Home() {
             <div className="musicMedia">
               <div className="musicVideoFrame">
                 <iframe
-                  src="https://youtu.be/LjMHJs-QOEc"
+                  src="https://www.youtube.com/embed/LjMHJsQOEc"
                   title="Brady Zhou November 2026 violin solo"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

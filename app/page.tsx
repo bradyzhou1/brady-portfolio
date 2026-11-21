@@ -545,8 +545,8 @@ export default function Home() {
             <div className="musicMedia">
               <div className="musicVideoFrame">
                 <iframe
-                  src="https://www.youtube.com/embed/F3n6xjZCq8Q"
-                  title="Brady Zhou December 2025 violin solo"
+                  src="https://www.youtube.com/embed/LjMHJs-QOEc"
+                  title="Brady Zhou November 2026 violin solo"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -559,8 +559,8 @@ export default function Home() {
             <div className="musicMedia">
               <div className="musicVideoFrame">
                 <iframe
-                  src="https://www.youtube.com/embed/LjMHJsQOEc"
-                  title="Brady Zhou November 2026 violin solo"
+                  src="https://www.youtube.com/embed/F3n6xjZCq8Q"
+                  title="Brady Zhou December 2025 violin solo"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
